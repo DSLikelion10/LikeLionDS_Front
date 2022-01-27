@@ -1,0 +1,46 @@
+.barBody {
+  background-color: blue;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.leftBar {
+  background-color: #0d0d0d;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 90px;
+  height: 95vh;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.rightContent {
+  background-color: #ffffff;
+  flex-grow: 1;
+  height: 95vh;
+  margin-right: 20px;
+  border-radius: 20px;
+  border: 0;
+  outline: 0;
+  padding: 10px;
+}
+
+#imgBox {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+ul > li {
+  color: #ffffff;
+}
+
+.barBody img {
+  cursor: pointer;
+}
