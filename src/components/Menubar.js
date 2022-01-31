@@ -7,7 +7,7 @@ const Menubar = () => {
   return (
     <div class="barBody">
       <div class="leftBar">
-        <div id="imgBox">
+        <div id="home-imgdiv">
           <img
             alt="홈 아이콘"
             src="img/likelion_DS_logo.png"
@@ -15,7 +15,7 @@ const Menubar = () => {
             height="60px"
           />
         </div>
-        <ul>
+        <ul id="menubar">
           <li>
             <img alt="마이페이지" src="img/mypage_button.png" />
           </li>
@@ -29,6 +29,17 @@ const Menubar = () => {
             <img alt="코드라이언" src="img/codelion_button.png" />
           </li>
         </ul>
+        <div class="burger">
+          <ul>
+            <li>마이페이지</li>
+            <li>체크</li>
+            <li>스터디</li>
+            <li>코드라이언</li>
+          </ul>
+        </div>
+        <div id="logout-imgdiv">
+          <img alt="로그아웃 아이콘" src="img/logout_button.png" />
+        </div>
       </div>
       <div class="rightContent">뭐가들어갈지 몰라요</div>
     </div>
