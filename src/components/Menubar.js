@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/ResetCSS.css';
 import '../css/Menubar.css';
+import Home from './Home';
 
 //태영 : Menubar 제작
 const Menubar = () => {
@@ -41,7 +42,9 @@ const Menubar = () => {
           <img alt="로그아웃 아이콘" src="img/logout_button.png" />
         </div>
       </div>
-      <div class="rightContent">뭐가들어갈지 몰라요</div>
+      <div class="rightContent">
+        <Home />
+      </div>
     </div>
   );
 };
