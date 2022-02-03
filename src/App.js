@@ -6,7 +6,7 @@ import Check_attend from './components/Check_attend';
 import Mypage from './components/Mypage';
 import Study_main from './components/Study_main';
 import Login from './components/Login';
-
+import Signup from './components/Signup';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -18,7 +18,7 @@ const App = () => {
       <Route path="/mypage" element={<Mypage />}></Route>
       <Route path="/study_main" element={<Study_main />}></Route>
       <Route path="/login" element={<Login />}></Route>
-
+      <Route path="/signup" element={<Signup />}></Route>
     </Routes>
   );
 };
