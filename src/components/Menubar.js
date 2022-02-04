@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/ResetCSS.css';
 import '../css/Menubar.css';
-import Home from './Home';
+import { Link, Outlet } from 'react-router-dom';
 
 //태영 : Menubar 제작
 const Menubar = () => {
@@ -18,24 +18,50 @@ const Menubar = () => {
         </div>
         <ul id="menubar">
           <li>
-            <img alt="마이페이지" src="img/mypage_button.png" />
+            <Link to="/mypage">
+              <img alt="마이페이지" src="img/mypage_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="체크" src="img/check_button.png" />
+            <Link to="/check_task">
+              <img alt="체크" src="img/check_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="스터디" src="img/study_button.png" />
+            <Link to="/study_main">
+              <img alt="스터디" src="img/study_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="코드라이언" src="img/codelion_button.png" />
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img alt="코드라이언" src="img/codelion_button.png" />
+            </a>
           </li>
         </ul>
         <div class="burger">
           <ul>
-            <li>마이페이지</li>
-            <li>체크</li>
-            <li>스터디</li>
-            <li>코드라이언</li>
+            <li>
+              <Link to="/mypage">마이페이지</Link>
+            </li>
+            <li>
+              <Link to="/check_task">체크</Link>
+            </li>
+            <li>
+              <Link to="/study_main">스터디</Link>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.codelion.net/"
+                rel="noreferrer"
+              >
+                코드라이언
+              </a>
+            </li>
           </ul>
         </div>
         <div id="logout-imgdiv">
@@ -43,7 +69,7 @@ const Menubar = () => {
         </div>
       </div>
       <div class="rightContent">
-        <Home />
+        <Outlet />
       </div>
     </div>
   );
