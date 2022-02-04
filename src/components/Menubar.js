@@ -1,11 +1,7 @@
 import React from 'react';
 import '../css/ResetCSS.css';
 import '../css/Menubar.css';
-import Home from './Home';
-import Check_attend from './Check_attend';
-import Mypage from './Mypage';
-import Study_main from './Study_main';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 
 //태영 : Menubar 제작
 const Menubar = () => {
@@ -22,22 +18,34 @@ const Menubar = () => {
         </div>
         <ul id="menubar">
           <li>
-            <img alt="마이페이지" src="img/mypage_button.png" />
+            <Link to="/mypage">
+              <img alt="마이페이지" src="img/mypage_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="체크" src="img/check_button.png" />
+            <Link to="/check_task">
+              <img alt="체크" src="img/check_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="스터디" src="img/study_button.png" />
+            <Link to="/study_main">
+              <img alt="스터디" src="img/study_button.png" />
+            </Link>
           </li>
           <li>
-            <img alt="코드라이언" src="img/codelion_button.png" />
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img alt="코드라이언" src="img/codelion_button.png" />
+            </a>
           </li>
         </ul>
         <div class="burger">
           <ul>
             <li>
-              <Link to="/">마이페이지</Link>
+              <Link to="/mypage">마이페이지</Link>
             </li>
             <li>
               <Link to="/check_task">체크</Link>
@@ -46,7 +54,13 @@ const Menubar = () => {
               <Link to="/study_main">스터디</Link>
             </li>
             <li>
-              <Link to="">코드라이언</Link>
+              <a
+                target="_blank"
+                href="https://www.codelion.net/"
+                rel="noreferrer"
+              >
+                코드라이언
+              </a>
             </li>
           </ul>
         </div>
@@ -54,7 +68,9 @@ const Menubar = () => {
           <img alt="로그아웃 아이콘" src="img/logout_button.png" />
         </div>
       </div>
-      <div class="rightContent">{}</div>
+      <div class="rightContent">
+        <Outlet />
+      </div>
     </div>
   );
 };
