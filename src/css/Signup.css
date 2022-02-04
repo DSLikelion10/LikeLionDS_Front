@@ -1,0 +1,96 @@
+.signup{
+  background:url(../img/back.png);
+  background-size:cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans KR';
+}
+.wrapper{
+  z-index:3;
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction:column;
+  background:  rgba(255,255,255,0.9);
+}
+.top{
+  height:10%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SignupTitle{
+  font-weight:700;
+  font-family: 'Noto Sans KR';
+  font-size:2.5vw;
+}
+/* wrapper의 mid 부분 css */
+.mid{
+  height:80%;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputDiv{
+  display:flex;
+  width:70%;
+  justify-content: center;
+  padding-bottom:20px;
+}
+.inputDiv p{
+  flex:2 2 0;
+  font-size:1.7vw;
+}
+.inputDiv input{
+  flex: 4 4 0;
+  background-color: #c4c4c4;
+  border:none;
+  outline:none;
+  padding:0rem 0.7rem;
+  font-size:1.2rem;
+  font-family:'Noto Sans KR';
+}
+.inputDiv label{
+  flex: 2 2 0;
+  border:none;
+  outline:none;
+  padding:0rem 0.7rem;
+  font-family:'Noto Sans KR';
+}
+
+/* wrapper의 bottom 부분 css */
+.bottom{
+  height:10%;
+  width: 100%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+button{
+  width:150px;
+  height:60%;
+  color:white;
+  font-family:'Noto Sans KR';
+  font-style:normal;
+  margin-right:20px;
+}
+.cancelBtn{
+  background-color:#686C73;
+  border-style: none;
+}
+.submitBtn{
+  background-color: #b70050;
+  border-style:none;
+}

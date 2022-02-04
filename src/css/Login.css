@@ -1,0 +1,153 @@
+
+.login {
+  /* background-color: #0D0D0D; */
+  background:url(../img/back.png);
+  background-size:cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Sans KR';
+}
+
+.wrapper{
+
+  z-index:3;
+  width: 60%;
+  height: 75%;
+  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  flex-direction:column;
+  background:  rgba(255,255,255,0.9);
+}
+/* wrapper의 상단 welcome 부분 */
+.top{
+  height:40%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginTitle{
+  font-weight:700;
+  font-family: 'Noto Sans KR';
+  font-size:5vw;
+}
+
+
+.bottom{
+  display: flex;
+  height:60%;
+  width:100%;
+}
+/* wrapper의 좌측 input 부분 */
+.leftside{
+  flex:2 2 0;
+  padding-right:25px;
+  text-align: right;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.input-div{
+  position:relative;
+  display:grid;
+  grid-template-columns: 7% 93%;
+  width:80%;
+  margin:20px 0;
+  padding:5px 0 5px 10px;
+  background-color: #CAC6C8;
+}
+.input-div:after, .input-div:before{
+  content: '';
+  position:absolute;
+  bottom:-2px;
+  width:0;
+  height:2px;
+  background-color: #B70050;
+  transition: .3s;
+}
+.input-div:after{
+  right: 50%;
+}
+.input-div:before{
+  left: 50%;
+}
+.input-div.focus .i .ic{
+  color:#B70505;
+}
+.input-div.focus div h5{
+  top: -5px;
+  font-size:15px;
+}
+.input-div.focus:after, .input-div.focus:before{
+  width:50%;
+}
+.input-div.one{
+  margin-top:0;   
+}
+.input-div.two{
+  margin-bottom:4px;
+}
+.i{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.i .ic{
+  color:#615d5f;
+  transition: .3s;
+}
+.input-div > div{
+  position:relative;
+  height:45px;
+}
+.input-div > div h5{
+  position:absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color:#615d5f;
+  font-size: 18px;
+  transition:.3s;
+}
+.input{
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border:none;
+  outline:none;
+  background: none;
+  padding:0rem 0.7rem;
+  font-size:1.2rem;
+  font-family:'Noto Sans KR';
+  color:#c4c4c4;
+}
+
+
+Link{
+  color:#F2921D;
+  font-size:20px;
+  font-family:"Arial","Noto Sans KR","Rationale";
+}
+/* wrapper의 우측 버튼 부분 */
+.rightside{
+  flex:1 1 0;
+}
+.submit{
+  background-color:#B70050;
+  color:white;
+  font-family:"Noto Sans KR";
+  font-size:30px;
+  padding:61px 45px;
+  border-style:none;
+}
