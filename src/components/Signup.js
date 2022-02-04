@@ -1,36 +1,36 @@
+// 수정 : Signup.js 제작
 import '../css/ResetCSS.css';
-import '../css/Signup.css';
+import styles from '../css/Signup.module.css';
 const Signup = () => {
   return (
-    <div className="signup">
-
-      <div className="wrapper">
-        <div className="top">
-          <h1 className="SignupTitle">Create Account</h1>
+    <div className={styles.signup}>
+      <div className={styles.wrapper}>
+        <div className={styles.top}>
+          <h1 className={styles.SignupTitle}>Create Account</h1>
         </div>
-        <div className="mid">
-          <div className="inputDiv">
+        <div className={styles.mid}>
+          <div className={styles.inputDiv}>
             <p>아이디</p><input type="text" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>비밀번호</p><input type="password" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>비밀번호 확인</p><input type="password" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>이름</p><input type="text" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>전공</p><input type="text" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>이메일</p><input type="text" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>전화번호</p><input type="text" />
           </div>
-          <div className="inputDiv">
+          <div className={styles.inputDiv}>
             <p>구분</p>
             <label>
               <input type="radio" name="role" value="leader" />
@@ -42,9 +42,9 @@ const Signup = () => {
             </label>
           </div>
         </div>
-        <div className="bottom">
-          <button className="cancelBtn">CANCEL</button>
-          <button className="submitBtn">WELCOME!</button>
+        <div className={styles.bottom}>
+          <button className={styles.cancelBtn}>CANCEL</button>
+          <button className={styles.submitBtn}>WELCOME!</button>
         </div>
       </div>
     </div>
