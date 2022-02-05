@@ -12,6 +12,11 @@ const Home = () => {
                     alt="스피커 아이콘"
                     src="img/speaker.png"
                 />
+            <p class="chktitle"> 대표님의 한 말씀 </p>
+                <hr class="divider" />
+                
+            <p class="chktitle"> 일정 캘린더 </p>
+                <hr class="divider" />
                 <p class ="choolchk">
                     동덕여대와 함께하는 GIT 세션
                 </p>
