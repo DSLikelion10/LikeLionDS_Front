@@ -9,10 +9,10 @@ const Check_task = () => {
   return (
     <div className='chkbox'>
         <div className="chkheader">
-        <Link to = '/Check_task'>
+        <Link to = '/Check_task' style={{ textDecoration: 'none' }}>
         <p className ="tasks">과제 체크</p>
         </Link>
-        <Link to = '/Check_attend'>
+        <Link to = '/Check_attend' style={{ textDecoration: 'none' }}>
         <p className ="attends">출석 체크</p>
         </Link> 
         </div>
