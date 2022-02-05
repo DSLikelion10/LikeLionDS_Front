@@ -11,7 +11,7 @@
 
 }
 
-.chktitle {
+.h-title{
   font-family: Noto Sans KR;
   font-style: normal;
   font-weight: bold;
@@ -27,10 +27,10 @@
 
 .divider {
   margin: 0em;
-  width: 80%;
-  left : 200px;
-  top: 135px;
-  position: absolute;
+  width: 95%;
+  left : 38px;
+  top: 10px;
+  position:relative;
 }
 
 .choolchk {
@@ -68,6 +68,6 @@
   width: 80%;
   height: 300px;
   position: absolute;
-  left: 70px;
-  top:150px;
+  left: 15%;
+  top:35%;
 }

@@ -10,32 +10,34 @@
     padding:0px;
     /* 체크 헤더 CSS */
   }
+  .tasks {
+    font-family: Noto Sans KR;
+    font-size: 18px;
+    color: #F2921D;
+    font-weight: bold;
+    top:15px;
+    left: 16px;
+    position: relative;
+    display: inline;
+    margin: 6px;
+  }
+  
+  .attends {
+    font-family: Noto Sans KR;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    top:15px;
+    left: 16px;
+    position: relative;
+    display: inline;
+    margin: 6px;
+  }
+  
 
-.tasks {
-  font-family: Noto Sans KR;
-  color: #F2921D;
-  font-size: 18px;
-  font-weight: bold;
-  top:15px;
-  left: 16px;
-  position: relative;
-  display: inline;
-  margin: 6px;
-}
-
-.attends {
-  font-family: Noto Sans KR;
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  top:15px;
-  left: 16px;
-  position: relative;
-  display: inline;
-  margin: 6px;
-}
   
   
+
   .chktitle {
     font-family: Noto Sans KR;
     font-style: normal;
@@ -84,7 +86,7 @@
     left: 210px;
     top:200px;
   }
-
+  
   .DR {
     font-family: Noto Sans KR;
     font-weight: bold;
