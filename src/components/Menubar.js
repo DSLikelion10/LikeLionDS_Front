@@ -86,7 +86,7 @@ const Menubar = () => {
       <div className={styles.rightContent}>
         <Outlet />
       </div>
-    </div>
+  </div>
   );
 };
 

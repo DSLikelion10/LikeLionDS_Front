@@ -1,0 +1,73 @@
+.chkheader {
+  /* position: absolute; */
+  /* width: 100%; */
+  height: 50px;
+  /* left: 113px; */
+  /* top: 30px; */
+  background: #474F56;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0px;
+  padding:0px;
+
+}
+
+.h-title{
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  margin: 10px 40px 0px;
+  /* margin-top: 0; */
+  /* position: absolute; */
+  color: #000000;
+}
+
+.divider {
+  margin: 0em;
+  width: 95%;
+  left : 38px;
+  top: 10px;
+  position:relative;
+}
+
+.choolchk {
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  display: inline;
+  color: #000000;
+  position: absolute;
+  left: 230px;
+  top: 145px;
+}
+.speaker {
+  width: 20px;
+  height:20px;
+  left: 210px;
+  top: 143px;
+  position: absolute;
+}
+
+.headerchk {
+  font-family: Noto Sans KR;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  top:15px;
+  left: 16px;
+  position: relative;
+  display: inline;
+  margin: 6px;
+}
+
+
+.Zandi {
+  background-color: #474F56;
+  width: 80%;
+  height: 300px;
+  position: absolute;
+  left: 15%;
+  top:35%;
+}
