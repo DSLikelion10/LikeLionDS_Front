@@ -31,7 +31,7 @@ const Login = () => {
                 <input className={styles.input} type="password" placeholder="Password"></input>
               </div>
             </div>
-            <p>아직 덕성 멋사 회원이 아니시라면? <Link to="/Signup" className={styles.signupLink}>회원가입하러가기</Link></p>
+            <p className={styles.signupAnnounce}>아직 덕성 멋사 회원이 아니시라면? <Link to="/Signup" className={styles.signupLink}>회원가입하러가기</Link></p>
           </div>
           <div className={styles.rightside}>
             <button className={styles.submit}>GO</button>

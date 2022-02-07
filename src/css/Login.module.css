@@ -11,13 +11,12 @@
 }
 
 .wrapper{
-
   z-index:3;
-  width: 60%;
-  height: 75%;
-  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
-  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  width: 50.27vw;
+  max-width:724px;
+  padding:0px 6.11%;
+  height: 44.44vw;
+  max-height:640px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,9 +36,8 @@
 .loginTitle{
   font-weight:700;
   font-family: 'Noto Sans KR';
-  font-size:5vw;
+  font-size:3.47vw;
 }
-
 
 .bottom{
   display: flex;
@@ -49,7 +47,7 @@
 /* wrapper의 좌측 input 부분 */
 .leftside{
   flex:2 2 0;
-  padding-right:25px;
+
   text-align: right;
   display:flex;
   flex-direction: column;
@@ -60,14 +58,18 @@
   position:relative;
   display:grid;
   grid-template-columns: 7% 93%;
-  width:80%;
+  width:38.75vw;
+  max-width:558px;
+  height:4.5vw;
   margin:20px 0;
   padding:5px 0 5px 10px;
+  align-items: center;
   background-color: #CAC6C8;
+  margin-top:0;
 }
 
 .inputDiv.one{
-  margin-top:0;   
+  margin-bottom:22px;
 }
 .inputDiv.two{
   margin-bottom:4px;
@@ -77,10 +79,13 @@
   justify-content: center;
   align-items: center;
 }
+.ic{
+  font-size:1.85vw;
+}
 
 .inputDiv > div{
   position:relative;
-  height:45px;
+  height:100%;
 }
 
 .input{
@@ -93,17 +98,26 @@
   outline:none;
   background: none;
   padding:0rem 0.7rem;
-  font-size:1.2rem;
+  font-size:2.08vw;
   font-family:'Noto Sans KR';
   color:black;
 }
 
-
+.signupAnnounce{
+  font-size:1.38vw;
+  margin-top:13px;
+}
 .signupLink{
   color:#F2921D;
-  font-size:20px;
-  font-family:"Arial","Noto Sans KR","Rationale";
+  font-family:"Noto Sans KR";
 }
+
+@media screen and (min-width:1440px){/*웹 너비가 1440px 이상일 경우*/
+  .signupAnnounce{
+    font-size:20px;
+  }
+}
+
 /* wrapper의 우측 버튼 부분 */
 .rightside{
   flex:1 1 0;
@@ -112,7 +126,38 @@
   background-color:#B70050;
   color:white;
   font-family:"Noto Sans KR";
-  font-size:30px;
-  padding:61px 45px;
+  font-size:2.08vw;
+  text-align: center;
+  width:9.375vw;
+  height:11.45vw;
+  margin-left:31px;
   border-style:none;
+}
+
+@media screen and (max-width:625px) {/* 웹 너비가 625px 이하일 경우*/
+  .wrapper{
+    height: 80vw;
+  }
+  .bottom{
+    flex-direction: column;
+  }
+  .leftside{
+    align-items: center;
+    flex:1 1;
+  }
+  .rightside{
+    align-items: center;
+  }
+  .signupAnnounce{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    
+  }
+  .submit{
+    margin-top:2vw;
+    width:38.75vw;
+    max-width:558px;
+    height:4.5vw;
+  }
 }
