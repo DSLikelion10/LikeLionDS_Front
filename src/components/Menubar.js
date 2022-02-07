@@ -1,25 +1,35 @@
 import React from 'react';
 import '../css/ResetCSS.css';
-import '../css/Menubar.css';
-import { Link, Outlet } from 'react-router-dom';
+import styles from '../css/Menubar.module.css';
+import { Link, Outlet, useLocation } from 'react-router-dom';
 
 //태영 : Menubar 제작
 const Menubar = () => {
+  const location = useLocation();
+
+  const navColorChange = (e) => {
+    console.log(location.pathname);
+
+    switch (location.pathname) {
+      case '/study_main':
+        console.log(location.pathname);
+        break;
+      // no default
+    }
+  };
+
   return (
-    <div class="barBody">
-      <div class="leftBar">
-        <div id="home-imgdiv">
-          {/* 로고 클릭시 홈 이동 - eb */}
-          <Link to ="/"> 
+    <div className={styles.barBody}>
+      <div className={styles.leftBar}>
+        <div id={styles.homeImgdiv}>
           <img
             alt="홈 아이콘"
             src="img/likelion_DS_logo.png"
             width="60px"
             height="60px"
           />
-          </Link>
         </div>
-        <ul id="menubar">
+        <ul id={styles.menubar}>
           <li>
             <Link to="/mypage">
               <img alt="마이페이지" src="img/mypage_button.png" />
@@ -45,15 +55,15 @@ const Menubar = () => {
             </a>
           </li>
         </ul>
-        <div class="burger">
+        <div className={styles.burger}>
           <ul>
-            <li>
+            <li id="mypage_text" onClick={navColorChange}>
               <Link to="/mypage">마이페이지</Link>
             </li>
-            <li>
+            <li id="check_text" onClick={navColorChange}>
               <Link to="/check_task">체크</Link>
             </li>
-            <li>
+            <li id="study_text" onClick={navColorChange}>
               <Link to="/study_main">스터디</Link>
             </li>
             <li>
@@ -67,14 +77,16 @@ const Menubar = () => {
             </li>
           </ul>
         </div>
-        <div id="logout-imgdiv">
-          <img alt="로그아웃 아이콘" src="img/logout_button.png" />
+        <div id={styles.logoutImgdiv}>
+          <Link to="/login">
+            <img alt="로그아웃 아이콘" src="img/logout_button.png" />
+          </Link>
         </div>
       </div>
-      <div class="rightContent">
+      <div className={styles.rightContent}>
         <Outlet />
       </div>
-    </div>
+  </div>
   );
 };
 
