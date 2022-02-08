@@ -63,18 +63,19 @@ ul#menubar > li {
   font-size: smaller;
   margin: 0px 10px 30px 10px;
   text-align: center;
+}
+
+.burger a {
   text-decoration: none;
 }
 
-/* a,
-a:link,
-a:visited,
-a:focus,
-a:hover,
-a:active {
-  text-decoration: none;
+.clicked {
   color: rgb(226, 226, 226);
-} */
+}
+
+.clicked:hover {
+  color: #f2921d;
+}
 
 @media (max-height: 600px) {
   #menubar {

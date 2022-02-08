@@ -8,8 +8,6 @@ const Menubar = () => {
   const location = useLocation();
 
   const navColorChange = (e) => {
-    console.log(location.pathname);
-
     switch (location.pathname) {
       case '/study_main':
         console.log(location.pathname);
@@ -57,20 +55,27 @@ const Menubar = () => {
         </ul>
         <div className={styles.burger}>
           <ul>
-            <li id="mypage_text" onClick={navColorChange}>
-              <Link to="/mypage">마이페이지</Link>
+            <li onClick={navColorChange}>
+              <Link className={styles.clicked} to="/mypage">
+                마이페이지
+              </Link>
             </li>
             <li id="check_text" onClick={navColorChange}>
-              <Link to="/check_task">체크</Link>
+              <Link className={styles.clicked} to="/check_task">
+                체크
+              </Link>
             </li>
             <li id="study_text" onClick={navColorChange}>
-              <Link to="/study_main">스터디</Link>
+              <Link className={styles.clicked} to="/study_main">
+                스터디
+              </Link>
             </li>
             <li>
               <a
                 target="_blank"
                 href="https://www.codelion.net/"
                 rel="noreferrer"
+                className={styles.clicked}
               >
                 코드라이언
               </a>
