@@ -96,3 +96,56 @@ ul#menubar > li {
     display: none;
   }
 }
+
+.mypageLi {
+  display: inline-block;
+  background-image: url('../img/mypage_button.png');
+  width: 40px;
+  height: 40px;
+}
+
+.checkLi {
+  display: inline-block;
+  background-image: url('../img/check_button.png');
+  width: 35px;
+  height: 35px;
+}
+
+.studyLi {
+  display: inline-block;
+  background-image: url('../img/study_button.png');
+  width: 40px;
+  height: 40px;
+}
+
+.codelionLi {
+  background-image: url('../img/codelion_button.png');
+  width: 40px;
+  height: 40px;
+}
+
+.logoutLi {
+  background-image: url('../img/logout_button.png');
+  width: 40px;
+  height: 40px;
+}
+
+.mypageLi:hover {
+  background-image: url('../img/click_mypage_button.png');
+}
+
+.checkLi:hover {
+  background-image: url('../img/click_check_button.png');
+}
+
+.studyLi:hover {
+  background-image: url('../img/click_study_button.png');
+}
+
+.codelionLi:hover {
+  background-image: url('../img/click_codelion_button.png');
+}
+
+.logoutLi:hover {
+  background-image: url('../img/click_logout_button.png');
+}
