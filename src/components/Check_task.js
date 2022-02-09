@@ -21,7 +21,7 @@ const Check_task = () => {
             <img className={styles.speaker}
                 alt="스피커 아이콘"
                 src="img/speaker.png"
-            />s
+            />
             <p className ={styles.choolchk}>
                 {/* 수정필요 */}
                 여대톤이 곧 열립니다! 잘 준비하고 계신가요?
