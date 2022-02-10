@@ -1,4 +1,8 @@
 
+.chkbox{
+  height: 90vh;
+}
+
 .chkheader {
   /* position: absolute; */
   /* width: 100%; */
@@ -63,34 +67,48 @@
   font-family: Noto Sans KR;
   font-size: 14px;
   display: inline;
+  font-stretch: expanded;
+  margin-top: 50px;
+  height: 40px;
   color: #000000;
-  position: absolute;
-  left: 230px;
-  top: 145px;
+
 }
-.speaker {
+#speaker {
   width: 20px;
   height:20px;
-  left: 210px;
+  display: inline;
+  /* left: 210px;
   top: 143px;
-  position: absolute;
+  position: absolute; */
 }
 
 
-.Zandi {
+.zandi {
   background-color: #474F56;
   width: 80%;
-  height: 390px;
-  position: absolute;
+  height: 50vh;
+  align-items: left;
+  /* position: absolute;
   left: 210px;
-  top:200px;
+  top:200px; */
 }
 
-.DR {
+.dukrepo {
+  
+  align-items: left;
   font-family: Noto Sans KR;
   font-weight: bold;
   font-size: 35px;
-  position:absolute;
-  left: 610px;
-  top: 640px;
+  
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: auto;
+  height: 75vh;
+  margin-left: 50px;
 }

@@ -12,8 +12,8 @@ const Home = () => {
 
                 </div>
             <p className="h-title"> 대표의 한 마디 </p>
-                <hr className="divider" />
-                <img class="speaker"
+            <hr className="divider" />
+            <img className="speaker"
                 alt="스피커 아이콘"
                 src="img/speaker.png"/>
             <p className="h-title"> 일정 캘린더 </p>

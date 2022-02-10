@@ -16,19 +16,24 @@ const Check_task = () => {
           <p className={styles.attends}>출석 체크</p>
         </Link>
       </div>
-      <p className={styles.chktitle}> 이번주 세션 공지 </p>
+    <p className={styles.chktitle}> 이번주 세션 공지 </p>
+    <div className={styles.container}>
       <hr className={styles.divider} />
+      <div className='speakertitle'>
+
       <img
-        className={styles.speaker}
+        id={styles.speaker}
         alt="스피커 아이콘"
         src="img/speaker.png"
-      />
+        />
       <p className={styles.choolchk}>
         {/* 수정필요 */}
         동덕여대와 함께하는 GIT 세션
       </p>
-      <div className={styles.Zandi}></div>
-      <p className={styles.DR}>DUKSUNG REPOSITORY</p>
+        </div>
+      <div className={styles.zandi}></div>
+      <p className={styles.dukrepo}>DUKSUNG REPOSITORY</p>
+    </div>
     </div>
   );
 };

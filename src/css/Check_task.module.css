@@ -1,97 +1,97 @@
 .chkheader {
-    /* position: absolute; */
-    /* width: 100%; */
-    height: 50px;
-    /* left: 113px; */
-    /* top: 30px; */
-    background: #474F56;
-    border-radius: 20px 20px 0px 0px;
-    margin: 0px;
-    padding:0px;
-    /* 체크 헤더 CSS */
-  }
-  .tasks {
-    font-family: Noto Sans KR;
-    font-size: 18px;
-    color: #F2921D;
-    font-weight: bold;
-    top:15px;
-    left: 16px;
-    position: relative;
-    display: inline;
-    margin: 6px;
-  }
-  
-  .attends {
-    font-family: Noto Sans KR;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    top:15px;
-    left: 16px;
-    position: relative;
-    display: inline;
-    margin: 6px;
-  }
-  
+  /* position: absolute; */
+  /* width: 100%; */
+  height: 50px;
+  /* left: 113px; */
+  /* top: 30px; */
+  background: #474F56;
+  border-radius: 20px 20px 0px 0px;
+  margin: 0px;
+  padding:0px;
+  /* 체크 헤더 CSS */
+}
+.tasks {
+  font-family: Noto Sans KR;
+  font-size: 18px;
+  color: #F2921D;
+  font-weight: bold;
+  top:15px;
+  left: 16px;
+  position: relative;
+  display: inline;
+  margin: 6px;
+}
 
-  
-  
+.attends {
+  font-family: Noto Sans KR;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  top:15px;
+  left: 16px;
+  position: relative;
+  display: inline;
+  margin: 6px;
+}
 
-  .chktitle {
-    font-family: Noto Sans KR;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 36px;
-    display: flex;
-    align-items: center;
-    margin: 10px 40px 0px;
-    /* margin-top: 0; */
-    /* position: absolute; */
-    color: #000000;
-  }
-  
-  .divider {
-    margin: 0em;
-    width: 80%;
-    left : 200px;
-    top: 135px;
-    position: absolute;
-  }
-  
-  .choolchk {
-    font-family: Noto Sans KR;
-    font-size: 14px;
-    display: inline;
-    color: #000000;
-    position: absolute;
-    left: 230px;
-    top: 145px;
-  }
-  .speaker {
-    width: 20px;
-    height:20px;
-    left: 210px;
-    top: 143px;
-    position: absolute;
-  }
-  
-  
-  .Zandi {
-    background-color: #474F56;
-    width: 80%;
-    height: 390px;
-    position: absolute;
-    left: 210px;
-    top:200px;
-  }
-  
-  .DR {
-    font-family: Noto Sans KR;
-    font-weight: bold;
-    font-size: 35px;
-    position:absolute;
-    left: 610px;
-    top: 640px;
-  }
+
+
+
+
+.chktitle {
+  font-family: Noto Sans KR;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  margin: 10px 40px 0px;
+  /* margin-top: 0; */
+  /* position: absolute; */
+  color: #000000;
+}
+
+.divider {
+  margin: 0em;
+  width: 80%;
+  left : 200px;
+  top: 135px;
+  position: absolute;
+}
+
+.choolchk {
+  font-family: Noto Sans KR;
+  font-size: 14px;
+  display: inline;
+  color: #000000;
+  position: absolute;
+  left: 230px;
+  top: 145px;
+}
+.speaker {
+  width: 20px;
+  height:20px;
+  left: 210px;
+  top: 143px;
+  position: absolute;
+}
+
+
+.Zandi {
+  background-color: #474F56;
+  width: 80%;
+  height: 390px;
+  position: absolute;
+  left: 210px;
+  top:200px;
+}
+
+.DR {
+  font-family: Noto Sans KR;
+  font-weight: bold;
+  font-size: 35px;
+  position:absolute;
+  left: 610px;
+  top: 640px;
+}
