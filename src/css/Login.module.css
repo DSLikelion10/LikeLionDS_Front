@@ -4,6 +4,8 @@
   background:url(../img/back.png);
   background-size:cover;
   height: 100vh;
+  /* min-width:500px; */
+  min-width:768px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -134,9 +136,14 @@
   border-style:none;
 }
 
-@media screen and (max-width:625px) {/* 웹 너비가 625px 이하일 경우*/
+@media screen and (max-width:768px) {/* 웹 너비가 625px 이하일 경우*/
   .wrapper{
-    height: 80vw;
+    width:386px;
+    height: 614px;
+    padding:0px 47px;
+  }
+  .loginTitle{
+    font-size:27px;
   }
   .bottom{
     flex-direction: column;
@@ -145,19 +152,34 @@
     align-items: center;
     flex:1 1;
   }
+  .inputDiv{
+    width:308px;
+    height:34.55px;
+  }
+  .ic{
+    font-size:14px;
+  }
+  .input{
+    font-size:15px;
+  }
   .rightside{
-    align-items: center;
+    display: flex;
+    justify-content: center;
   }
   .signupAnnounce{
     display: flex;
     flex-direction: column;
-    line-height: 2em;
-    
+    font-size:13px;
+    line-height:18px;
+    width:297px;
   }
   .submit{
     margin-top:2vw;
-    width:38.75vw;
+    width:318px;
     max-width:558px;
-    height:4.5vw;
+    height:34.55px;
+    margin-top:14.88px;
+    margin-left:0;
+    font-size:15.84px;
   }
 }
