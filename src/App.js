@@ -7,6 +7,7 @@ import Mypage from './components/Mypage';
 import StudyMain from './components/Study_main';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import SubmitTask from './components/Submit_task';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -19,6 +20,8 @@ const App = () => {
           <Route path="/check_attend" element={<CheckAttend />}></Route>
           <Route path="/mypage" element={<Mypage />}></Route>
           <Route path="/study_main" element={<StudyMain />}></Route>
+          {/* 은 과제제출 페이지 라우터 설정 */}
+          <Route path="/submit_task" element={<SubmitTask />}></Route>
         </Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>

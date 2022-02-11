@@ -39,7 +39,7 @@ const Menubar = () => {
           </li>
           <li>
             <NavLink
-              to="/check_task"
+              to="{슈라랄라랄}"
               className={styles.checkLi}
               style={({ isActive }) => ({
                 backgroundImage: isActive ? `url(${activeCheck})` : '',
