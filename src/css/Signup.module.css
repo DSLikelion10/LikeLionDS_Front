@@ -1,19 +1,23 @@
+/* 수정 : Signup.module.css 제작 */
 .signup{
   background:url(../img/back.png);
   background-size:cover;
   height: 100vh;
+  min-width:768px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Noto Sans KR';
 }
+
+
 .wrapper{
   z-index:3;
-  width: 60%;
-  height: 75%;
-  -webkit-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
-  -moz-box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
-  box-shadow: 0px 5px 33px -21px rgba(66, 68, 90, 1);
+  max-width:690px;
+  width: 62.5vw;
+  height: 59.72vw; 
+  max-height:860px;
+  padding:0px 7.63% 0px 6.94%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -22,8 +26,8 @@
   background:  rgba(255,255,255,0.9);
 }
 .top{
-  height:10%;
-  width:100%;
+  flex:13 13 0;
+  width:47.916vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,35 +35,44 @@
 .SignupTitle{
   font-weight:700;
   font-family: 'Noto Sans KR';
-  font-size:2.5vw;
+  font-size:3.47vw;
 }
 /* wrapper의 mid 부분 css */
 .mid{
-  height:80%;
-  width:100%;
+  flex:60 60 0;
+  width:47.916vw;
+  height:41.66vw;
+  max-height:600px;
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .inputDiv{
   display:flex;
-  width:70%;
-  justify-content: center;
-  padding-bottom:20px;
+  width:47.916vw;
+  max-width:690px;
+  max-height:56px;
+  justify-content: space-between;
+  /* padding-bottom:1.38vw; */
+  align-items: center;
 }
 .inputDiv p{
-  flex:2 2 0;
-  font-size:1.7vw;
+  flex:3 3 0;
+  font-size:1.736vw;
 }
+
 .inputDiv input{
-  flex: 4 4 0;
+  flex:7 7 0;
+  width:35.416vw;
+  height:3.88vw;
+  max-height:56px;
   background-color: #c4c4c4;
   border:none;
   outline:none;
   padding:0rem 0.7rem;
-  font-size:1.2rem;
+  font-size:2.08vw;
   font-family:'Noto Sans KR';
 }
 .inputDiv label{
@@ -68,20 +81,28 @@
   outline:none;
   padding:0rem 0.7rem;
   font-family:'Noto Sans KR';
+  font-size: 2.08vw;
+  
+}
+.inputDiv label input{
+  width:2.08vw;
+  margin:0 auto;
+  margin-right:10px;
 }
 
 /* wrapper의 bottom 부분 css */
 .bottom{
-  height:10%;
+  flex:13 13 0;
   width: 100%;
   display:flex;
   justify-content: flex-end;
   align-items: center;
 }
 .cancelBtn, .submitBtn{
-  width:150px;
-  height:60%;
+  width:13.19vw;
+  height:4.027vw;
   color:white;
+  font-size:1.736vw;
   font-family:'Noto Sans KR';
   font-style:normal;
   margin-right:20px;
@@ -93,4 +114,61 @@
 .submitBtn{
   background-color: #b70050;
   border-style:none;
+}
+
+@media screen and (min-width:1440px){/*웹 너비가 1440px 이상일 경우*/
+  .inputDiv p{
+    font-size:25px;
+  }
+  .inputDiv label{
+    font-size:25px;
+  }
+  .inputDiv label input{
+    width:30px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .wrapper{
+    width:386px;
+    height: 614px;
+    padding:0px 47px;
+  }
+  .cancelBtn, .submitBtn{
+    width:101px;
+    height:31px;
+
+  }
+.top{
+  width:368px;
+}
+.SignupTitle{
+  font-size:27px;
+}
+/* wrapper의 mid 부분 css */
+.mid{
+  width:367.98px;
+  height:428.37px;
+}
+
+.inputDiv{
+  width:367.98px;
+}
+.inputDiv p{
+  font-size:16px;
+}
+
+.inputDiv input{
+  width:265.14px;
+  height:29.8px;
+  font-size:16px;
+
+}
+.inputDiv label{
+  font-size: 16px;
+  
+}
+.inputDiv label input{
+  width:16px;
+}
 }
