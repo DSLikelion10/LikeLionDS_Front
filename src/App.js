@@ -3,11 +3,13 @@ import Menubar from './components/Menubar';
 import Home from './components/Home';
 import CheckTask from './components/Check_task';
 import CheckAttend from './components/Check_attend';
+import CheckMenubar from './components/Check_menubar';
 import Mypage from './components/Mypage';
 import StudyMain from './components/Study_main';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import SubmitTask from './components/Submit_task';
+
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -16,8 +18,11 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Menubar />}>
           <Route index element={<Home />} />
-          <Route path="/check_task" element={<CheckTask />}></Route>
-          <Route path="/check_attend" element={<CheckAttend />}></Route>
+          {/* 태영 : 과제체크 페이지와 출석 체크 페이지 묶음 */}
+          <Route path="/checks" element={<CheckMenubar />}>
+            <Route index element={<CheckTask />} />
+            <Route path="attend" element={<CheckAttend />}></Route>
+          </Route>
           <Route path="/mypage" element={<Mypage />}></Route>
           <Route path="/study_main" element={<StudyMain />}></Route>
           {/* 은 과제제출 페이지 라우터 설정 */}
