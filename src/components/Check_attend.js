@@ -3,19 +3,12 @@
 import React from 'react';
 import '../css/ResetCSS.css';
 import styles from '../css/Check_attend.module.css';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+// import CheckMenubar from './Check_menubar';
 
 const Check_task = () => {
   return (
     <div className={styles.chkbox}>
-      <div className={styles.chkheader}>
-        <Link to="/check_task" style={{ textDecoration: 'none' }}>
-          <p className={styles.tasks}>과제 체크</p>
-        </Link>
-        <Link to="/check_attend" style={{ textDecoration: 'none' }}>
-          <p className={styles.attends}>출석 체크</p>
-        </Link>
-      </div>
       <p className={styles.chktitle}> 이번주 세션 공지 </p>
       <hr className={styles.divider} />
       <img
