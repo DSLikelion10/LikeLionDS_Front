@@ -1,0 +1,96 @@
+/* 수정 : Mypage.module.css 제작 */
+
+.mypage{
+  font-family:'Noto Sans KR';
+  margin:53px 46px;
+  height:80vh;
+  width:75vw;
+  overflow-y:scroll;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+.mypage::-webkit-scrollbar{
+  display: none;
+}
+.topHeader{
+  display: flex;
+  justify-content: space-between;
+}
+.editInfo{
+  display: flex;
+  align-items: center;
+  color:#F2921D;
+}
+.editIc{
+  font-size:20px;
+}
+.myInfo{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.myImg img{
+  width:200px;
+  margin-left:50px;
+  margin-right:50px;
+}
+.infoForm div{
+  display: grid;
+  width:80%;
+  grid-template-columns:1fr 8fr;
+}
+.infoForm div p{
+  margin-top:0;
+  margin-bottom:1rem;
+}
+.infoForm div p:first-child{
+  color:#B70050;
+  font-weight: bold;
+  font-size:20px;
+  min-width:110px;
+}
+
+.lectureProgress{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap:20px;
+
+}
+.lectureDiv{
+  background-color: #C4C4C4;
+  width:30vw;
+  min-width:437px;
+  height:130px;
+  padding:22px;
+  box-sizing: border-box;
+}
+.lectureDiv p{
+  margin-top :0;
+  margin-bottom: 1rem;
+}
+.progressbar{
+  display: flex;
+  height: 1rem;
+  overflow: hidden;
+  font-size: .75rem;
+  background-color: #e9ecef;
+  border-radius: 0.25rem;
+}
+.progressbar div{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    transition: width .6s ease;
+  background-color: #B70050;
+  
+}
+@media screen and (max-width:1200px){
+  .lectureProgress{
+    grid-template-columns:1fr;
+    justify-items:left;
+  }
+}
