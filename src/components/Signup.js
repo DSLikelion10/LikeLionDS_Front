@@ -1,6 +1,7 @@
 // 수정 : Signup.js 제작
 import '../css/ResetCSS.css';
 import styles from '../css/Signup.module.css';
+import { Link } from 'react-router-dom';
 const Signup = () => {
   return (
     <div className={styles.signup}>
@@ -43,8 +44,8 @@ const Signup = () => {
           </div>
         </div>
         <div className={styles.bottom}>
-          <button className={styles.cancelBtn}>CANCEL</button>
-          <button className={styles.submitBtn}>WELCOME!</button>
+          <button className={styles.cancelBtn} onClick={() => { window.location.replace("/login") }}>CANCEL</button>
+          <button className={styles.submitBtn} onClick={() => { window.location.replace("/login") }}>WELCOME!</button>
         </div>
       </div>
     </div>
