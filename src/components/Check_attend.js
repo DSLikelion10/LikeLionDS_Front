@@ -26,7 +26,6 @@ const Check_task = () => {
       <div className={styles.zandi}></div>
       <p className={styles.dukrepo}>DUKSUNG REPOSITORY</p>
     </div>
-    </div>
   );
 };
 
