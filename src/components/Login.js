@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { faUser, faLock } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
 
-const Login = () => {
+const Login = ({ history }) => {
 
   return (
     <div className={styles.login}>
@@ -34,7 +34,7 @@ const Login = () => {
             <p className={styles.signupAnnounce}>아직 덕성 멋사 회원이 아니시라면? <Link to="/Signup" className={styles.signupLink}>회원가입하러가기</Link></p>
           </div>
           <div className={styles.rightside}>
-            <button className={styles.submit}>GO</button>
+            <button className={styles.submit} onClick={() => { window.location.replace("/") }}>GO</button>
           </div>
         </div>
       </div>
