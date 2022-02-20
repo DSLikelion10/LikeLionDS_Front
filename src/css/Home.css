@@ -11,6 +11,10 @@
 
 }
 
+.winner {
+  height: 120px;
+}
+
 .h-title{
   font-family: Noto Sans KR;
   font-style: normal;
@@ -19,7 +23,7 @@
   line-height: 36px;
   display: flex;
   align-items: center;
-  margin: 10px 40px 0px;
+  margin: 10px 0px 0px 40px ;
   /* margin-top: 0; */
   /* position: absolute; */
   color: #000000;
@@ -29,7 +33,7 @@
   margin: 0em;
   width: 95%;
   left : 38px;
-  top: 10px;
+  top: 0px;
   position:relative;
 }
 
@@ -38,16 +42,16 @@
   font-size: 14px;
   display: inline;
   color: #000000;
-  position: absolute;
+  margin-bottom: 30px;
+  /* position: absolute;
   left: 230px;
-  top: 145px;
+  top: 145px; */
 }
 .speaker {
+  display: inline;
+  margin-top: 20px;
   width: 20px;
   height:20px;
-  left: 210px;
-  top: 143px;
-  position: absolute;
 }
 
 .headerchk {
@@ -63,11 +67,21 @@
 }
 
 
-.Zandi {
-  background-color: #474F56;
-  width: 80%;
-  height: 300px;
-  position: absolute;
-  left: 15%;
-  top:35%;
+#speakercontainer {
+  margin-left: 40px;
+}
+
+.Calcontainer {
+  margin-left: 60px;
+  margin-top: 20px;
+  width: 50%;
+  display: inline-block;
+}
+
+.textcontainer {
+  width: 30%;
+  height: 20%;
+  background-color: blanchedalmond;
+  display: inline-block;
+  margin-left: 30px;
 }
