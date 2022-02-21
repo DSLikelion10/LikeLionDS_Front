@@ -1,0 +1,47 @@
+.btn{
+    margin: 2px;
+}
+
+.card2{
+    margin-top: 10px;
+
+}
+
+.chkheader {
+    /* position: absolute; */
+    /* width: 100%; */
+    height: 50px;
+    /* left: 113px; */
+    /* top: 30px; */
+    background: #474F56;
+    border-radius: 20px 20px 0px 0px;
+    margin: 0px;
+    padding:0px;
+    /* 체크 헤더 CSS */
+  }
+  .tasks {
+    font-family: Noto Sans KR;
+    font-size: 20px;
+    color: #FFFF;
+    font-weight: bold;
+    top:15px;
+    left: 16px;
+    position: relative;
+    display: inline;
+    margin: 6px;
+  }
+
+  .header-part{
+    margin-top: 20px;
+  }
+  .float-left{
+      float: left;
+  }
+  .float-right{
+      float: right;
+  }
+  .clearfix{
+    clear: both; 
+    height: 0; 
+    overflow: hidden;
+  }

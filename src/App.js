@@ -9,6 +9,10 @@ import StudyMain from './components/Study_main';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import SubmitTask from './components/Submit_task';
+import SubmitEnd from './components/Submit_end';
+import ProjectList from './components/ProjectList';
+import ProjectCreate from './components/ProjectCreate';
+import ProjectView from './components/ProjectView';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -25,8 +29,12 @@ const App = () => {
           </Route>
           <Route path="/mypage" element={<Mypage />}></Route>
           <Route path="/study_main" element={<StudyMain />}></Route>
-          {/* 은 과제제출 페이지 라우터 설정 */}
+          {/* 은 과제제출 페이지, 제출완료 페이지, 운영진과제창 라우터 설정 */}
           <Route path="/submit_task" element={<SubmitTask />}></Route>
+          <Route path="/submit_end" element={<SubmitEnd />}></Route>
+          <Route path="/projectlist" element={<ProjectList />}></Route>
+          <Route path="/projectcreate" element={<ProjectCreate />}></Route>
+          <Route path="/projectview" element={<ProjectView />}></Route>
         </Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
