@@ -1,15 +1,33 @@
 // 수정 : Mypage.js 제작
+import React, { useState, useRef } from 'react';
 import '../css/ResetCSS.css';
 import styles from '../css/Mypage.module.css';
 import { ProgressBar } from 'react-bootstrap';
 import { faPenSquare } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
 
-import React from 'react';
-
 const Mypage = () => {
+  const [file, setFile] = useState();
+  const [Image, setImage] = useState("img/likelion_DS_logo.png")
+  const fileInput = useRef(null)
+
+  const onChange = (e) => {
+    if (e.target.files[0]) {
+      setFile(e.target.files[0])
+    } else {
+      setImage("https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png")
+      return
+    }
+    const reader = new FileReader();
+    reader.onload = () => {
+      if (reader.readyState === 2) {
+        setImage(reader.result)
+      }
+    }
+    reader.readAsDataURL(e.target.files[0])
+  }
   return (
-    <div className={styles.mypage}>
+    <div className={styles.mypage} >
       <div className={styles.topHeader}>
         <div>내 정보</div>
         <div className={styles.editInfo}>
@@ -18,7 +36,10 @@ const Mypage = () => {
       </div>
       <hr />
       <div className={styles.myInfo}>
-        <div className={styles.myImg}><img src="img/likelion_DS_logo.png" /></div>
+        <div className={styles.myImg}>
+          <img src={Image} onClick={() => { fileInput.current.click() }} />
+          <input type="file" style={{ display: 'none' }} accept='image/*' name='profile_img' onChange={onChange} ref={fileInput} />
+        </div>
         <div className={styles.infoForm}>
           <div><p>이름</p><p>김멋사</p></div>
           <div><p>전공</p><p>멋사학과</p></div>

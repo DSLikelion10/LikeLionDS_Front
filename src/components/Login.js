@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { faUser, faLock } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
 
-const Login = ({ history }) => {
+const Login = () => {
 
   return (
     <div className={styles.login}>
