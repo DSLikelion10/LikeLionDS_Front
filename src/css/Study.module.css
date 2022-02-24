@@ -1,3 +1,18 @@
-h1 {
+.studybody {
+  padding: 20px;
   font-family: 'NotoSansKR';
+}
+
+.writediv {
+  width: max-content;
+  margin: 0 0 0 auto;
+}
+
+#studywrite {
+  background-color: #b70050;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
 }

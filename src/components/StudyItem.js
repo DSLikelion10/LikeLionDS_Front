@@ -1,4 +1,5 @@
 import React from 'react';
+import studystyle from '../css/Study.module.css';
 
 const StudyItem = () => {
   return (

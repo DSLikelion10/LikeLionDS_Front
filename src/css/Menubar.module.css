@@ -41,6 +41,7 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 #logoutImgdiv {
@@ -53,10 +54,6 @@ ul#menubar > li {
 
 .burger {
   display: none;
-}
-
-.barBody img {
-  cursor: pointer;
 }
 
 .burger li {
@@ -78,7 +75,7 @@ ul#menubar > li {
   color: #f2921d;
 }
 
-@media (max-height: 600px) {
+@media (max-height: 700px) {
   #menubar {
     display: none;
   }
