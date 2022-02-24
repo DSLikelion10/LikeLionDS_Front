@@ -2,7 +2,6 @@
 import React, { useState, useRef } from 'react';
 import '../css/ResetCSS.css';
 import styles from '../css/Mypage.module.css';
-import { ProgressBar } from 'react-bootstrap';
 import { faPenSquare } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
 
@@ -29,7 +28,7 @@ const Mypage = () => {
   return (
     <div className={styles.mypage} >
       <div className={styles.topHeader}>
-        <div>내 정보</div>
+        <div className={styles.title}>내 정보</div>
         <div className={styles.editInfo}>
           <FontAwesomeIcon className={styles.editIc} icon={faPenSquare} />정보 수정
         </div>
@@ -48,38 +47,9 @@ const Mypage = () => {
           <div><p>한 줄 소개</p><p>여러분은 총명하고 똑똑하게 살아야해요</p></div>
         </div>
       </div>
-      <div>강의 진행률</div>
+      <div className={styles.title}>🌱1일 1잔디를 실천합시다</div>
       <hr />
-      <div className={styles.lectureProgress}>
-        <div className={styles.lectureDiv}>
-          <p>일단 만드는 HTML/CSS</p>
-          <ProgressBar className={styles.progressbar} now={100} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>일단 만드는 Python</p>
-          <ProgressBar className={styles.progressbar} now={60} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>[심화]같이 푸는 Python</p>
-          <ProgressBar className={styles.progressbar} now={80} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>실검에 오르는 세렝게티 동물 테스트 만들기</p>
-          <ProgressBar className={styles.progressbar} now={40} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>실검에 오르는 세렝게티 동물 테스트 만들기</p>
-          <ProgressBar className={styles.progressbar} now={60} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>실검에 오르는 세렝게티 동물 테스트 만들기</p>
-          <ProgressBar className={styles.progressbar} now={60} />
-        </div>
-        <div className={styles.lectureDiv}>
-          <p>실검에 오르는 세렝게티 동물 테스트 만들기</p>
-          <ProgressBar className={styles.progressbar} now={60} />
-        </div>
-      </div>
+      <img className={styles.ghchart}src="https://ghchart.rshah.org/B70050/soosoo030"/>
     </div>
   )
 };

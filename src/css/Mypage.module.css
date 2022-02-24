@@ -16,6 +16,10 @@
   display: flex;
   justify-content: space-between;
 }
+.title{
+  font-weight: 700;
+  font-size:20px;
+}
 .editInfo{
   display: flex;
   align-items: center;
@@ -49,45 +53,10 @@
   min-width:110px;
 }
 
-.lectureProgress{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  gap:20px;
+.ghchart{
+  width:100%;
+}
 
-}
-.lectureDiv{
-  background-color: #C4C4C4;
-  width:30vw;
-  min-width:437px;
-  height:130px;
-  padding:22px;
-  box-sizing: border-box;
-}
-.lectureDiv p{
-  margin-top :0;
-  margin-bottom: 1rem;
-}
-.progressbar{
-  display: flex;
-  height: 1rem;
-  overflow: hidden;
-  font-size: .75rem;
-  background-color: #e9ecef;
-  border-radius: 0.25rem;
-}
-.progressbar div{
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    transition: width .6s ease;
-  background-color: #B70050;
-  
-}
 @media screen and (max-width:1200px){
   .lectureProgress{
     grid-template-columns:1fr;

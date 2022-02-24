@@ -1,7 +1,7 @@
 
 
 .chktitle {
-  font-family: Noto Sans KR;
+  font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -23,7 +23,8 @@
 }
 
 .choolchk {
-  font-family: Noto Sans KR;
+  font-family: "Noto Sans KR";
+  /* font-family: 'paybooc-Bold' ; */
   font-size: 14px;
   display: inline;
   font-stretch: expanded;
