@@ -16,7 +16,7 @@
 }
 
 .h-title{
-  font-family: Noto Sans KR;
+  font-family: 'paybooc-Bold';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -38,7 +38,7 @@
 }
 
 .choolchk {
-  font-family: Noto Sans KR;
+  font-family: 'paybooc-Bold';
   font-size: 14px;
   display: inline;
   color: #000000;
@@ -56,7 +56,7 @@
 }
 
 .headerchk {
-  font-family: Noto Sans KR;
+  font-family: 'paybooc-Bold';
   color: white;
   font-size: 18px;
   font-weight: bold;

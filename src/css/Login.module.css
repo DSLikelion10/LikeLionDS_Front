@@ -9,7 +9,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans KR';
+  font-family: 'paybooc-Bold';
 }
 
 .wrapper{
@@ -37,7 +37,7 @@
 
 .loginTitle{
   font-weight:700;
-  font-family: 'Noto Sans KR';
+  font-family: 'paybooc-ExtraBold';
   font-size:3.47vw;
 }
 
@@ -101,7 +101,7 @@
   background: none;
   padding:0rem 0.7rem;
   font-size:2.08vw;
-  font-family:'Noto Sans KR';
+  font-family: 'paybooc-Bold';
   color:black;
 }
 
@@ -111,7 +111,7 @@
 }
 .signupLink{
   color:#F2921D;
-  font-family:"Noto Sans KR";
+  font-family: 'paybooc-Bold';
 }
 
 @media screen and (min-width:1440px){/*웹 너비가 1440px 이상일 경우*/
@@ -127,7 +127,7 @@
 .submit{
   background-color:#B70050;
   color:white;
-  font-family:"Noto Sans KR";
+  font-family: 'paybooc-Bold';
   font-size:2.08vw;
   text-align: center;
   width:9.375vw;

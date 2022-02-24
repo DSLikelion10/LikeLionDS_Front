@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Noto Sans KR';
+  font-family: 'paybooc-Bold';
 }
 
 
@@ -34,7 +34,7 @@
 }
 .SignupTitle{
   font-weight:700;
-  font-family: 'Noto Sans KR';
+  font-family: 'paybooc-ExtraBold';
   font-size:3.47vw;
 }
 /* wrapper의 mid 부분 css */
@@ -73,14 +73,14 @@
   outline:none;
   padding:0rem 0.7rem;
   font-size:2.08vw;
-  font-family:'Noto Sans KR';
+  font-family: 'paybooc-Bold';
 }
 .inputDiv label{
   flex: 2 2 0;
   border:none;
   outline:none;
   padding:0rem 0.7rem;
-  font-family:'Noto Sans KR';
+  font-family: 'paybooc_Medium';
   font-size: 2.08vw;
   
 }
@@ -103,7 +103,7 @@
   height:4.027vw;
   color:white;
   font-size:1.736vw;
-  font-family:'Noto Sans KR';
+  font-family: 'paybooc_Medium';
   font-style:normal;
   margin-right:20px;
 }
