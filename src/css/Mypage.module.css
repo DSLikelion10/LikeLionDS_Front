@@ -24,23 +24,32 @@
   display: flex;
   align-items: center;
   color:#F2921D;
+  cursor: pointer;
+  background-color: #fff;
+  border:0px;
 }
 .editIc{
   font-size:20px;
+  color:#F2921D;
 }
 .myInfo{
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin-bottom:5em;
 }
 .myImg img{
   width:200px;
   margin-left:50px;
   margin-right:50px;
 }
+.myImg :hover{
+  opacity: 60%;
+}
 .infoForm div{
   display: grid;
   width:80%;
   grid-template-columns:1fr 8fr;
+  align-items: center;
 }
 .infoForm div p{
   margin-top:0;
@@ -52,14 +61,19 @@
   font-size:20px;
   min-width:110px;
 }
+.infoForm div p span:hover{
+  cursor: pointer;
+  color:#F2921D;
+}
 
 .ghchart{
   width:100%;
 }
 
-@media screen and (max-width:1200px){
-  .lectureProgress{
-    grid-template-columns:1fr;
-    justify-items:left;
-  }
+.infoModal{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width:80%;
+  margin:0 auto;
 }
