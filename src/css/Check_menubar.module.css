@@ -4,11 +4,13 @@
   border-radius: 20px 20px 0px 0px;
   margin: 0px;
   padding:0px;
+  font-family: paybooc-Bold;
   /* 체크 헤더 CSS */
 }
 
 .header_item {
-  font-family: Noto Sans KR;
+  font-family: paybooc-Bold;
+  /* font-family: NotoSansKR; */
   font-size: 18px;
   font-weight: bold;
   top:15px;
