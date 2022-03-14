@@ -65,6 +65,7 @@ const Mypage = () => {
     },
     [name, major, email, tel, gitAddress, velogAddress, comment],
   )
+  const gitId = gitAddress.replace('https://github.com/', '')
 
   return (
     <div className={styles.mypage} >
@@ -84,6 +85,7 @@ const Mypage = () => {
           {(onClick) => (
             <div className={styles.infoModal} style={{ backgroundColor: '#fff', padding: '1em' }}>
               <form onSubmit={onSubmit}>
+                <h1>개인 정보 수정</h1>
                 <div>이름<input type="text" value={name} disabled /></div>
                 <div>전공<input type="text" value={major} disabled /></div>
                 <div>이메일 주소<input type="email" value={email} onChange={onChangeEmail} /></div>
@@ -116,7 +118,7 @@ const Mypage = () => {
       </div>
       <div className={styles.title}>🌱1일 1잔디를 실천합시다</div>
       <hr />
-      <img className={styles.ghchart} src="https://ghchart.rshah.org/B70050/soosoo030" />
+      <img className={styles.ghchart} src={"https://ghchart.rshah.org/B70050/".concat(gitId)} alt="⚠정보 수정에서 깃허브 주소를 입력해주세요" />
     </div>
   )
 };
