@@ -1,6 +1,16 @@
 .studybody {
   padding: 20px;
-  font-family: 'NotoSansKR';
+}
+
+.studybody h1 {
+  font-family: paybooc_ExtraBold;
+  font-size: 25px;
+}
+
+#studyItemRight h2 {
+  font-family: paybooc_ExtraBold;
+  font-size: 20px;
+  margin-bottom: 10px;
 }
 
 .writediv {
@@ -15,4 +25,26 @@
   height: 30px;
   border: none;
   border-radius: 5px;
+}
+
+#studyItem {
+  display: flex;
+}
+
+#studyItemRight {
+  margin-left: 15px;
+  display: block;
+  width: 300px;
+}
+
+.table th {
+  color: #b70050;
+  margin-right: 15px;
+  line-height: 1.7rem;
+  width: 40px;
+  text-align: start;
+}
+
+.table td {
+  color: #686c73;
 }
