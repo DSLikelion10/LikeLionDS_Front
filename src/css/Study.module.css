@@ -1,3 +1,73 @@
-h1 {
-  font-family: 'NotoSansKR';
+.studybody {
+  padding: 20px;
+}
+
+.studybody h1 {
+  font-family: paybooc_ExtraBold;
+  font-size: 25px;
+}
+
+#studyItemRight h2 {
+  font-family: paybooc_ExtraBold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.writediv {
+  width: max-content;
+  margin: 0 0 0 auto;
+}
+
+#studywrite {
+  background-color: #b70050;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+#studyItemRight {
+  margin-left: 15px;
+  display: block;
+  width: 300px;
+}
+
+.table th {
+  color: #b70050;
+  margin-right: 15px;
+  line-height: 1.7rem;
+  width: 40px;
+  text-align: start;
+}
+
+.table td {
+  color: #686c73;
+}
+
+.contentdiv {
+  width: fit-content;
+  height: min-content;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+
+#studyItem {
+  display: flex;
+  margin: 5px 20px 20px 20px;
+}
+
+@media (max-width: 1300px) {
+  .contentdiv {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  #studyItem {
+    display: block;
+  }
 }
