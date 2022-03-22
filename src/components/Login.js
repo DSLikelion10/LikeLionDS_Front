@@ -5,19 +5,30 @@ import { Link } from 'react-router-dom';
 import { faUser, faLock } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
 import React, { useState } from 'react';
+import axios from "axios";
 
 const Login = () => {
   const [inputId, setInputId] = useState(''); //사용자가 입력한 id값
   const [inputPwd, setInputPwd] = useState(''); //사용자가 입력한 pwd값
 
+  const send_param = {
+    userID:inputId,
+    userPW:inputPwd,
+  }
+
   const LoginHandle = () => {
+    axios.post('http://localhost:3001/auth/login',send_param).then((response)=>{
+     console.log(response.data);
     // id값이 user이고 비밀번호가 1234인 경우만 로그인이 가능하도록 해둠
-    if (inputId == "user" && inputPwd == "1234") {
-      window.location.replace("/")
-    }
-    else {
+    if(response.data.error){
       alert("로그인 실패!")
     }
+    else {
+      alert("로그인 성공!");
+      window.location.replace("/")
+    }
+  })
+
   }
   return (
     <div className={styles.login}>
