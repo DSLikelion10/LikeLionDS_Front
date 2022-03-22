@@ -1,7 +1,7 @@
 /* 수정 : Mypage.module.css 제작 */
 
 .mypage{
-  font-family:'Noto Sans KR';
+  font-family: 'paybooc-Bold';
   margin:53px 46px;
   height:80vh;
   width:75vw;
@@ -24,23 +24,33 @@
   display: flex;
   align-items: center;
   color:#F2921D;
+  cursor: pointer;
+  background-color: #fff;
+  border:0px;
 }
 .editIc{
   font-size:20px;
+  color:#F2921D;
 }
 .myInfo{
   display: grid;
   grid-template-columns: 1fr 4fr;
+  margin-bottom:5em;
 }
 .myImg img{
   width:200px;
   margin-left:50px;
   margin-right:50px;
 }
+.myImg :hover{
+  opacity: 60%;
+}
+
 .infoForm div{
   display: grid;
   width:80%;
   grid-template-columns:1fr 8fr;
+  align-items: center;
 }
 .infoForm div p{
   margin-top:0;
@@ -52,14 +62,48 @@
   font-size:20px;
   min-width:110px;
 }
+.infoForm div p span:hover{
+  cursor: pointer;
+  color:#F2921D;
+}
 
 .ghchart{
   width:100%;
 }
 
-@media screen and (max-width:1200px){
-  .lectureProgress{
-    grid-template-columns:1fr;
-    justify-items:left;
-  }
+/* 정보 수정 모달 */
+.infoModal{
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+  width:80%;
+  max-width:700px;
+  height:60%;
+  margin:0 auto;
+  font-family: 'paybooc-Bold';
+}
+.infoModal form{
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.infoModal form div{
+  display: flex;
+  justify-content: space-between;
+}
+.infoModal form div input{
+  width:80%;
+  font-family: 'paybooc-Bold';
+}
+.infoModal form button{
+  background-color:#B70050;
+  color:white;
+  padding:10px;
+  border-radius: 10px;
+  border-style: none;
+  font-family: 'paybooc-Bold';
+}
+.infoModal form button:hover{
+  color:#F2921D;
 }
