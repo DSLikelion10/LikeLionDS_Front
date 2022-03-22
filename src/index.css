@@ -11,10 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-@font-face {
+/* @font-face {
   font-family: 'NotoSansKR';
   src: url('./font/NotoSansKR-Regular.otf');
-}
+} */
 @font-face {
   font-family: 'paybooc-Bold';
   src: url('./font/paybooc-Bold.otf');
