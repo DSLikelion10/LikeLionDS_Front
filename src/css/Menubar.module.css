@@ -30,9 +30,16 @@
   border: 0;
   outline: 0;
   padding: 10px;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-#homeImgdiv {
+.rightContent::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera*/
+}
+
+.rightContent #homeImgdiv {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 70px;
