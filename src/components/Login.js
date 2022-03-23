@@ -19,7 +19,6 @@ const Login = () => {
   const LoginHandle = () => {
     axios.post('http://localhost:3001/auth/login',send_param).then((response)=>{
      console.log(response.data);
-    // id값이 user이고 비밀번호가 1234인 경우만 로그인이 가능하도록 해둠
     if(response.data.error){
       alert("로그인 실패!")
     }

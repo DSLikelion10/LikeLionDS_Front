@@ -3,6 +3,7 @@ import '../css/ResetCSS.css';
 import styles from '../css/Signup.module.css';
 import React, { useState } from 'react';
 import axios from "axios";
+import validator from 'validator';
 
 const Signup = () => {
   const [inputId, setInputId] = useState(null);
@@ -12,6 +13,8 @@ const Signup = () => {
   const [inputMajor, setInputMajor] = useState(null);
   const [inputEmail, setInputEmail] = useState(null);
   const [inputPhone, setInputPhone] = useState(null);
+  const regExp =  /^01([0|1|6|7|8|9]?)-?([0-9]{3,4})-?([0-9]{4})$/;
+
 
   const send_param = {
     userID:inputId,
@@ -33,6 +36,27 @@ const Signup = () => {
       }
     });
   }
+
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
+    //비밀번호 재확인
+    if (inputPwd !== inputPwd2){
+      return alert("비밀번호 확인이 일치하지 않습니다.");
+    }
+    //email validation
+    else if(!validator.isEmail(inputEmail)){
+      return alert("Enter Valid Email!");
+    }
+    //phone number validation
+    else if(regExp.test(inputPhone) === false){
+      return alert("Enter Valid Phone number!");
+    }
+    //id-DB 중복 체크
+    else {
+      Register()
+    }
+  }
+
   return (
     <div className={styles.signup}>
       <div className={styles.wrapper}>
@@ -71,7 +95,7 @@ const Signup = () => {
         </div>
         <div className={styles.bottom}>
           <button className={styles.cancelBtn} onClick={() => { window.location.replace("/login") }}>CANCEL</button>
-          <button className={styles.submitBtn} onClick={Register}>WELCOME!</button>
+          <button className={styles.submitBtn} onClick={onSubmitHandler}>WELCOME!</button>
         </div>
       </div>
     </div>
