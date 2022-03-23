@@ -80,12 +80,12 @@ const Menubar = () => {
           <ul>
             <li>
               <NavLink style={Active} className={styles.clicked} to="/mypage">
-                마이페이지
+                캘린더
               </NavLink>
             </li>
             <li id="check_text">
               <NavLink style={Active} className={styles.clicked} to="/checks">
-                체크
+                역사
               </NavLink>
             </li>
             <li id="study_text">
@@ -94,7 +94,7 @@ const Menubar = () => {
                 className={styles.clicked}
                 to="/study_main"
               >
-                스터디
+                활동 기록
               </NavLink>
             </li>
             <li>
