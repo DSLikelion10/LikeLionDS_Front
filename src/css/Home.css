@@ -1,12 +1,38 @@
+
 .title {
   position: fixed;
   font-family: paybooc-Bold;
-  font-size:280%;
+  font-size:240%;
   left: 30%;
   top: 20%;
   padding: 5px;
 }
 
+.sns_container {
+  position:absolute;
+  top: 40%;
+  left: 45%;
+
+}
+.sns_aline {
+  margin: 2px;
+}
+
+.sns_box {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
 .sns_icon {
-  
+  width: 55px;
+  height: 55px;
+}
+
+.sns_name {
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  bottom: 20px;
+  left: 10px;
 }
