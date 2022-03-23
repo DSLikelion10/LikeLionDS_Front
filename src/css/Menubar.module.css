@@ -104,14 +104,14 @@ ul#menubar > li {
 
 .mypageLi {
   display: inline-block;
-  background-image: url('../img/mypage_button.png');
+  background-image: url('../img/calender_button.png');
   width: 40px;
   height: 40px;
 }
 
 .checkLi {
   display: inline-block;
-  background-image: url('../img/check_button.png');
+  background-image: url('../img/history_button.png');
   width: 35px;
   height: 35px;
 }
