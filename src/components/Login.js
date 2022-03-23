@@ -4,8 +4,9 @@ import styles from '../css/Login.module.css';
 import { Link } from 'react-router-dom';
 import { faUser, faLock } from '../../node_modules/@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontawesome/index';
-import React, { useState } from 'react';
+import React, {useState } from 'react';
 import axios from "axios";
+import { setCookie} from '../util/cookie';
 
 const Login = () => {
   const [inputId, setInputId] = useState(''); //사용자가 입력한 id값
@@ -24,6 +25,9 @@ const Login = () => {
     }
     else {
       alert("로그인 성공!");
+      const token = response.data.token;
+      console.log(token);
+      setCookie('mytoken', token)
       window.location.replace("/")
     }
   })
