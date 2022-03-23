@@ -5,12 +5,18 @@ import activeStudy from '../img/click_study_button.png';
 import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
+import { removeCookie} from '../util/cookie';
 
 //태영 : Menubar 제작
 const Menubar = () => {
   const Active = ({ isActive }) => {
     return { color: isActive ? '#f2921d' : '' };
   };
+
+  const LogoutHandle = () => {
+    removeCookie("mytoken");
+    alert("로그아웃 되었습니다.");
+  }
 
   return (
     <div className={styles.barBody}>
@@ -104,7 +110,7 @@ const Menubar = () => {
           </ul>
         </div>
         <div id={styles.logoutImgdiv}>
-          <Link to="/login">
+          <Link to="/login" onClick={() => LogoutHandle()}>
             {/* <img alt="로그아웃 아이콘" src="img/logout_button.png" /> */}
             <div className={styles.logoutLi}></div>
           </Link>
