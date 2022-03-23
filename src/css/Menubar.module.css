@@ -136,11 +136,11 @@ ul#menubar > li {
 }
 
 .mypageLi:hover {
-  background-image: url('../img/click_mypage_button.png');
+  background-image: url('../img/calendar_hover.png');
 }
 
 .checkLi:hover {
-  background-image: url('../img/click_check_button.png');
+  background-image: url('../img/history_hover.png');
 }
 
 .studyLi:hover {
