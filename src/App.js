@@ -14,12 +14,18 @@ import ProjectList from './components/ProjectList';
 import ProjectCreate from './components/ProjectCreate';
 import ProjectView from './components/ProjectView';
 
-import { Routes, Route } from 'react-router-dom';
+import { getCookie } from './util/cookie';
+import { Routes, Route} from 'react-router-dom';
 
 const App = () => {
+  //로그인 상태 판별
+  let isAuthorized = (getCookie("mytoken")!==undefined?true:false);
+
   return (
     <>
       <Routes>
+        {/* 비로그인 상태면 어느 페이지를 들어가도 로그인 페이지로 연결되도록 함 */}
+      {!isAuthorized ? <Route path="/*" element={<Login />}></Route> : 
         <Route path="/" element={<Menubar />}>
           <Route index element={<Home />} />
           {/* 태영 : 과제체크 페이지와 출석 체크 페이지 묶음 */}
@@ -36,6 +42,7 @@ const App = () => {
           <Route path="/projectcreate" element={<ProjectCreate />}></Route>
           <Route path="/projectview" element={<ProjectView />}></Route>
         </Route>
+       }
         <Route path="/login" element={<Login />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
       </Routes>
