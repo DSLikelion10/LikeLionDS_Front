@@ -1,91 +1,12 @@
-.chkheader {
-  /* position: absolute; */
-  /* width: 100%; */
-  height: 50px;
-  /* left: 113px; */
-  /* top: 30px; */
-  background: #474F56;
-  border-radius: 20px 20px 0px 0px;
-  margin: 0px;
-  padding:0px;
-
+.title {
+  position: fixed;
+  font-family: paybooc-Bold;
+  font-size:280%;
+  left: 30%;
+  top: 20%;
+  padding: 5px;
 }
 
-.winner {
-  height: 120px;
-}
-
-.h-title{
-  font-family: 'paybooc-Bold';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 36px;
-  display: flex;
-  align-items: center;
-  margin: 10px 0px 0px 40px ;
-  /* margin-top: 0; */
-  /* position: absolute; */
-  color: #000000;
-}
-
-.divider {
-  margin: 0em;
-  width: 95%;
-  left : 38px;
-  top: 0px;
-  position:relative;
-}
-
-.choolchk {
-  font-family: 'paybooc-Bold';
-  font-size: 14px;
-  display: inline;
-  color: #000000;
-  margin-bottom: 30px;
-  /* position: absolute;
-  left: 230px;
-  top: 145px; */
-}
-
-.speaker {
-  display: inline;
-  margin-top: 20px;
-  width: 20px;
-  height:20px;
-}
-
-.headerchk {
-  font-family: 'paybooc-Bold';
-  color: white;
-  font-size: 18px;
-  font-weight: bold;
-  top:15px;
-  left: 16px;
-  position: relative;
-  display: inline;
-  margin: 6px;
-}
-
-
-#speakercontainer {
-  margin-left: 40px;
-}
-
-.Calcontainer {
-  margin-left: 60px;
-  margin-top: 20px;
-  width: 50%;
-  max-width: 545px;
-  /* width: 545px; */
+.sns_icon {
   
-  display: inline-block;
-}
-
-.textcontainer {
-  width: 30%;
-  height: 20%;
-  background-color: blanchedalmond;
-  display: inline-block;
-  margin-left: 30px;
 }
