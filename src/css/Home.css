@@ -1,13 +1,12 @@
 
 .title {
-  position: fixed;
+  position: absolute;
   font-family: paybooc-Bold;
-  font-size:3em;
+  font-size:45px;
   left: 30%;
   top: 20%;
   padding: 5px;
 }
-
 a{
   text-decoration: none;
 }
@@ -49,3 +48,22 @@ a:active { color:#F2921D; }
   bottom: 20px;
   left: 10px;
 }
+
+
+
+@media screen and (max-width: 1248px) {
+  .title {
+    display: none;
+  }
+  .title:after {
+    content: "덕성 멋사 10기 입니다.";
+    /* font-size: 30px; */
+    display: block;
+  }  
+  
+  };
+  @media screen and (max-width: 560px) {
+    .sns_name {
+      display: none;
+    }
+  };
