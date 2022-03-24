@@ -1,42 +1,72 @@
-//은빈 Home.js 제작
 import React from 'react';
-import '../css/ResetCSS.css';
+// import '../css/ResetCSS.css';
 import '../css/Home.css';
-import FullCalendar from '@fullcalendar/react'
-import dayGridPlugin from '@fullcalendar/daygrid'
+import github from '../img/github.png';
+import discord from '../img/discord.png';
+import google_drive from '../img/google_drive.png';
+import velog from '../img/Velog.png';
+import insta from '../img/insta.png';
 
-const Home = () => {
-    return(
-        <div>
-            <p className='h-title'> 이번주 명예의 전당 </p>
-                <hr className="divider" />
-                <div className="winner">
-
-                </div>
-            <p className="h-title"> 대표의 한 마디 </p>
-            <hr className="divider" />
-            <div id = "speakercontainer"> 
-            <img className="speaker"
-                alt="스피커 아이콘"
-                src="img/speaker.png"/>
-            <p className ="choolchk">
-                여대톤이 곧 열립니다! 모두들 잘 준비하고 계신가요?
-            </p>
-                </div>
-            <p className="h-title"> 일정 캘린더 </p>
-                <hr className="divider" />
-                <div className="Calcontainer">
-                  <FullCalendar 
-                    defaultView="dayGridMonth" 
-                    plugins={[ dayGridPlugin ]}
-                  />
-                </div>
-                <div className='textcontainer'>
-                    <p className='ListTitle'> · 운영진 OT </p>
-                </div>
-
-         </div>
-    );
-}; 
-
-export default Home;
+export default function Home() {
+  return (
+    <div className="wideframe">
+      <h1 className="title">안녕하세요! 덕성 멋쟁이사자처럼 10기 입니다</h1>
+      {/* 하드코딩 map 수정 예정!! 아마도 */}
+      <div className="sns_container">
+        <div className="sns_box">
+          <span className="sns_aline">
+            <a
+              style={{ textDecoration: 'none' }}
+              target="_blank"
+              href="https://github.com/DSLikelion10"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={github} />
+              <p className="sns_name"> Github 바로가기 </p>
+            </a>
+          </span>
+          <span className="sns_aline">
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={discord} />
+              <p className="sns_name"> discord 바로가기 </p>
+            </a>
+          </span>
+          <span className="sns_aline">
+            <a
+              target="_blank"
+              href="https://drive.google.com/drive/folders/1KiIQE2KOBdV-96OZIxEklFx6vt9WUEXp?usp=sharing"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={google_drive} />
+              <p className="sns_name"> google_drive 바로가기 </p>
+            </a>
+          </span>
+          <span className="sns_aline">
+            <a
+              target="_blank"
+              href="https://velog.io/@liklion_ds"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={velog} />
+              <p className="sns_name"> velog 바로가기 </p>
+            </a>
+          </span>
+          <span className="sns_aline">
+            <a
+              target="_blank"
+              href="https://www.instagram.com/likelion_ds/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={insta} />
+              <p className="sns_name"> insta 바로가기 </p>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  );
+}

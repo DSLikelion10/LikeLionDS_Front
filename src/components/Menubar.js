@@ -5,12 +5,17 @@ import activeStudy from '../img/click_study_button.png';
 import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
-import home from '../img/Home.svg';
+import { removeCookie } from '../util/cookie';
 
 //태영 : Menubar 제작
 const Menubar = () => {
   const Active = ({ isActive }) => {
     return { color: isActive ? '#f2921d' : '' };
+  };
+
+  const LogoutHandle = () => {
+    removeCookie('mytoken');
+    alert('로그아웃 되었습니다.');
   };
 
   return (
@@ -24,7 +29,7 @@ const Menubar = () => {
         <ul id={styles.menubar}>
           <li>
             <NavLink
-              to="/mypage"
+              to="/calendar"
               className={styles.mypageLi}
               style={({ isActive }) => ({
                 backgroundImage: isActive ? `url(${activeMypage})` : '',
@@ -70,12 +75,12 @@ const Menubar = () => {
           <ul>
             <li>
               <NavLink style={Active} className={styles.clicked} to="/mypage">
-                마이페이지
+                캘린더
               </NavLink>
             </li>
             <li id="check_text">
               <NavLink style={Active} className={styles.clicked} to="/checks">
-                체크
+                역사
               </NavLink>
             </li>
             <li id="study_text">
@@ -84,7 +89,7 @@ const Menubar = () => {
                 className={styles.clicked}
                 to="/study_main"
               >
-                스터디
+                활동 기록
               </NavLink>
             </li>
             <li>
@@ -100,7 +105,7 @@ const Menubar = () => {
           </ul>
         </div>
         <div id={styles.logoutImgdiv}>
-          <Link to="/login">
+          <Link to="/login" onClick={() => LogoutHandle()}>
             {/* <img alt="로그아웃 아이콘" src="img/logout_button.png" /> */}
             <div className={styles.logoutLi}></div>
           </Link>
