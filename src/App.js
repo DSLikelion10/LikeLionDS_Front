@@ -13,7 +13,9 @@ import SubmitEnd from './components/Submit_end';
 import ProjectList from './components/ProjectList';
 import ProjectCreate from './components/ProjectCreate';
 import ProjectView from './components/ProjectView';
-
+import Study from './components/Study';
+import StudyNewForm from './components/StudyNewForm';
+import StudyList from './components/StudyList';
 import { Routes, Route } from 'react-router-dom';
 
 const App = () => {
@@ -28,7 +30,11 @@ const App = () => {
             <Route path="attend" element={<CheckAttend />}></Route>
           </Route>
           <Route path="/mypage" element={<Mypage />}></Route>
-          <Route path="/study_main" element={<StudyMain />}></Route>
+          <Route path="/study_main" element={<StudyMain />}>
+            <Route index element={<StudyList />} />
+            <Route path=":studyId" element={<Study />} />
+            <Route path="new" element={<StudyNewForm />} />
+          </Route>
           {/* 은 과제제출 페이지, 제출완료 페이지, 운영진과제창 라우터 설정 */}
           <Route path="/submit_task" element={<SubmitTask />}></Route>
           <Route path="/submit_end" element={<SubmitEnd />}></Route>

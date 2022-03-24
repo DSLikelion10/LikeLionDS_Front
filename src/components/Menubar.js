@@ -5,6 +5,7 @@ import activeStudy from '../img/click_study_button.png';
 import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
+import home from '../img/Home.svg';
 
 //태영 : Menubar 제작
 const Menubar = () => {
@@ -17,12 +18,7 @@ const Menubar = () => {
       <div className={styles.leftBar}>
         <div id={styles.homeImgdiv}>
           <Link to="/">
-            <img
-              alt="홈 아이콘"
-              src="img/likelion_DS_logo.png"
-              width="60px"
-              height="60px"
-            />
+            <img alt="홈 아이콘" src={home} width="60px" height="60px" />
           </Link>
         </div>
         <ul id={styles.menubar}>
