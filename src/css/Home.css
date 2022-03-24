@@ -3,9 +3,21 @@
   position: absolute;
   font-family: paybooc-Bold;
   font-size:45px;
-  left: 30%;
+  left: 25%;
   top: 20%;
   padding: 5px;
+}
+
+.small-title {
+  position:absolute;
+  top: 25%;
+  left: 44%;
+  font-family: paybooc-Bold;
+  font-size:30px;
+  padding: 5px;
+  display: none;
+
+
 }
 a{
   text-decoration: none;
@@ -50,18 +62,24 @@ a:active { color:#F2921D; }
 }
 
 
-
 @media screen and (max-width: 1248px) {
   .title {
     display: none;
   }
-  .title:after {
-    content: "덕성 멋사 10기 입니다.";
-    /* font-size: 30px; */
-    display: block;
-  }  
-  
-  };
+  .small-title {
+    display: inline
+  }
+};
+
+@media screen and (max-width: 1248px) {
+  .title {
+    display: inline;
+  }
+  .small-title {
+    display: none;
+  }
+};
+
   @media screen and (max-width: 560px) {
     .sns_name {
       display: none;

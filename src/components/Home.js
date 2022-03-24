@@ -10,8 +10,9 @@ import insta from '../img/insta.png';
 export default function Home() {
   return (
     <div className="wideframe">
-      <h1 className="title">안녕하세요! 덕성 멋쟁이사자처럼 10기 입니다</h1>
-      {/* 하드코딩 map 수정 예정!! 아마도 */}
+      <h1 className="title">안녕하세요! 덕성여대 멋쟁이사자처럼 10기 입니다</h1>
+      <h1 className="small-title"> 덕성 멋사 10기 입니다 </h1>
+      {/* 하드코딩*/}
       <div className="sns_container">
         <div className="sns_box">
           <span className="sns_aline">
@@ -38,13 +39,14 @@ export default function Home() {
           <span className="sns_aline">
             <a
               target="_blank"
-              href="https://drive.google.com/drive/folders/1KiIQE2KOBdV-96OZIxEklFx6vt9WUEXp?usp=sharing"
+              href="https://www.codelion.net/"
               rel="noreferrer"
             >
               <img className="sns_icon" alt="sns_icon" src={google_drive} />
               <p className="sns_name"> google_drive 바로가기 </p>
             </a>
           </span>
+
           <span className="sns_aline">
             <a
               target="_blank"
