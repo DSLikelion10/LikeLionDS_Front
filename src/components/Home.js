@@ -15,24 +15,55 @@ export default function Home() {
       <div className="sns_container">
         <div className="sns_box">
           <span className="sns_aline">
-            <img className="sns_icon" alt="sns_icon" src={github} />
-            <p className="sns_name"> Github 바로가기 </p>
+            <a
+              style={{ textDecoration: 'none' }}
+              target="_blank"
+              href="https://github.com/DSLikelion10"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={github} />
+              <p className="sns_name"> Github 바로가기 </p>
+            </a>
           </span>
           <span className="sns_aline">
-            <img className="sns_icon" alt="sns_icon" src={discord} />
-            <p className="sns_name"> discord 바로가기 </p>
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={discord} />
+              <p className="sns_name"> discord 바로가기 </p>
+            </a>
           </span>
           <span className="sns_aline">
-            <img className="sns_icon" alt="sns_icon" src={google_drive} />
-            <p className="sns_name"> google_drive 바로가기 </p>
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={google_drive} />
+              <p className="sns_name"> google_drive 바로가기 </p>
+            </a>
           </span>
           <span className="sns_aline">
-            <img className="sns_icon" alt="sns_icon" src={velog} />
-            <p className="sns_name"> velog 바로가기 </p>
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={velog} />
+              <p className="sns_name"> velog 바로가기 </p>
+            </a>
           </span>
           <span className="sns_aline">
-            <img className="sns_icon" alt="sns_icon" src={insta} />
-            <p className="sns_name"> insta 바로가기 </p>
+            <a
+              target="_blank"
+              href="https://www.codelion.net/"
+              rel="noreferrer"
+            >
+              <img className="sns_icon" alt="sns_icon" src={insta} />
+              <p className="sns_name"> insta 바로가기 </p>
+            </a>
           </span>
         </div>
       </div>

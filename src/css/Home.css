@@ -2,11 +2,24 @@
 .title {
   position: fixed;
   font-family: paybooc-Bold;
-  font-size:240%;
+  font-size:3em;
   left: 30%;
   top: 20%;
   padding: 5px;
 }
+
+a{
+  text-decoration: none;
+}
+
+a:link { color:#F2921D; }
+
+a:visited { color:black; }
+
+a:hover { color:#F2921D; }
+
+a:active { color:#F2921D; }
+
 
 .sns_container {
   position:absolute;
