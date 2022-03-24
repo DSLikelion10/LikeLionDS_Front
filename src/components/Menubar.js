@@ -23,12 +23,7 @@ const Menubar = () => {
       <div className={styles.leftBar}>
         <div id={styles.homeImgdiv}>
           <Link to="/">
-            <img
-              alt="홈 아이콘"
-              src="img/likelion_DS_logo.png"
-              width="60px"
-              height="60px"
-            />
+            <img alt="홈 아이콘" src={home} width="60px" height="60px" />
           </Link>
         </div>
         <ul id={styles.menubar}>

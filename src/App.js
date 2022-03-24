@@ -13,7 +13,9 @@ import SubmitEnd from './components/Submit_end';
 import ProjectList from './components/ProjectList';
 import ProjectCreate from './components/ProjectCreate';
 import ProjectView from './components/ProjectView';
-
+import Study from './components/Study';
+import StudyNewForm from './components/StudyNewForm';
+import StudyList from './components/StudyList';
 import { getCookie } from './util/cookie';
 import { Routes, Route } from 'react-router-dom';
 import Calendar from './components/Calendarpg';
@@ -38,7 +40,11 @@ const App = () => {
             </Route>
             {/* 은빈 마이페이지 캘린더로 라우터 변경 */}
             <Route path="/calendar" element={<Calendar />}></Route>
-            <Route path="/study_main" element={<StudyMain />}></Route>
+            <Route path="/study_main" element={<StudyMain />}>
+              <Route index element={<StudyList />} />
+              <Route path=":studyId" element={<Study />} />
+              <Route path="new" element={<StudyNewForm />} />
+            </Route>
             {/* 은 과제제출 페이지, 제출완료 페이지, 운영진과제창 라우터 설정 */}
             <Route path="/submit_task" element={<SubmitTask />}></Route>
             <Route path="/submit_end" element={<SubmitEnd />}></Route>
