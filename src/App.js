@@ -16,7 +16,7 @@ import ProjectView from './components/ProjectView';
 
 import { getCookie } from './util/cookie';
 import { Routes, Route } from 'react-router-dom';
-import Calendar from './components/Calendar';
+import Calendar from './components/Calendarpg';
 
 const App = () => {
   //로그인 상태 판별

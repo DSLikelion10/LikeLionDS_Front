@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/ResetCSS.css';
+// import '../css/ResetCSS.css';
 import '../css/Home.css';
 import github from '../img/github.png';
 import discord from '../img/discord.png';
@@ -9,7 +9,7 @@ import insta from '../img/insta.png';
 
 export default function Home() {
   return (
-    <div>
+    <div className="wideframe">
       <h1 className="title">안녕하세요! 덕성 멋쟁이사자처럼 10기 입니다</h1>
       {/* 하드코딩 map 수정 예정!! 아마도 */}
       <div className="sns_container">
@@ -38,7 +38,7 @@ export default function Home() {
           <span className="sns_aline">
             <a
               target="_blank"
-              href="https://www.codelion.net/"
+              href="https://drive.google.com/drive/folders/1KiIQE2KOBdV-96OZIxEklFx6vt9WUEXp?usp=sharing"
               rel="noreferrer"
             >
               <img className="sns_icon" alt="sns_icon" src={google_drive} />
@@ -48,7 +48,7 @@ export default function Home() {
           <span className="sns_aline">
             <a
               target="_blank"
-              href="https://www.codelion.net/"
+              href="https://velog.io/@liklion_ds"
               rel="noreferrer"
             >
               <img className="sns_icon" alt="sns_icon" src={velog} />
@@ -58,7 +58,7 @@ export default function Home() {
           <span className="sns_aline">
             <a
               target="_blank"
-              href="https://www.codelion.net/"
+              href="https://www.instagram.com/likelion_ds/"
               rel="noreferrer"
             >
               <img className="sns_icon" alt="sns_icon" src={insta} />
