@@ -13,11 +13,11 @@ const Check_task = () => {
       <hr className={styles.divider} />
       <div className='speakertitle'>
 
-      <img
+      {/* <img
         id={styles.speaker}
         alt="스피커 아이콘"
         src="img/speaker.png"
-        />
+        /> */}
       <p className={styles.choolchk}>
         {/* 수정필요 */}
         동덕여대와 함께하는 GIT 세션

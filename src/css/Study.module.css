@@ -38,7 +38,7 @@
   color: #b70050;
   margin-right: 15px;
   line-height: 1.7rem;
-  width: 40px;
+  width: 50px;
   text-align: start;
 }
 
@@ -58,6 +58,7 @@
 #studyItem {
   display: flex;
   margin: 5px 20px 20px 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 1300px) {
@@ -70,4 +71,62 @@
   #studyItem {
     display: block;
   }
+}
+
+.contentdiv a {
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  margin: 10px;
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.head {
+  color: #b70050;
+  font-size: 20px;
+}
+
+.item {
+  font-size: 20px;
+}
+
+.detailtitle {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.detaildate {
+  text-align: right;
+}
+
+.studynewform label {
+  font-size: 20px;
+}
+
+.stip {
+  margin: 10px 0 15px 0;
+  height: 30px;
+  border: 1px solid #c4c4c4;
+  box-shadow: inset 0px 2px 3px #c4c4c4;
+  padding: 0px 10px 0 10px;
+}
+
+.studynewform textarea {
+  margin: 10px 0 10px 0;
+}
+
+.savebutton {
+  text-align: right;
+}
+.stbt {
+  color: white;
+  background: #686c73;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
 }

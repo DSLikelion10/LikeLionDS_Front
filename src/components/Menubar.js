@@ -5,7 +5,7 @@ import activeStudy from '../img/click_study_button.png';
 import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
-import { removeCookie} from '../util/cookie';
+import { removeCookie } from '../util/cookie';
 
 
 //태영 : Menubar 제작
@@ -15,27 +15,22 @@ const Menubar = () => {
   };
 
   const LogoutHandle = () => {
-    removeCookie("mytoken");
-    alert("로그아웃 되었습니다.");
-  }
+    removeCookie('mytoken');
+    alert('로그아웃 되었습니다.');
+  };
 
   return (
     <div className={styles.barBody}>
       <div className={styles.leftBar}>
         <div id={styles.homeImgdiv}>
           <Link to="/">
-            <img
-              alt="홈 아이콘"
-              src="img/likelion_DS_logo.png"
-              width="60px"
-              height="60px"
-            />
+            <img alt="홈 아이콘" src={home} width="60px" height="60px" />
           </Link>
         </div>
         <ul id={styles.menubar}>
           <li>
             <NavLink
-              to="/mypage"
+              to="/calendar"
               className={styles.mypageLi}
               style={({ isActive }) => ({
                 backgroundImage: isActive ? `url(${activeMypage})` : '',
