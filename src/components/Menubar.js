@@ -7,6 +7,7 @@ import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
 import { removeCookie} from '../util/cookie';
 
+
 //태영 : Menubar 제작
 const Menubar = () => {
   const Active = ({ isActive }) => {
