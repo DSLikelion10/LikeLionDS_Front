@@ -1,12 +1,11 @@
 import React from 'react';
-import activeMypage from '../img/click_mypage_button.png';
-import activeCheck from '../img/click_check_button.png';
+import activeMypage from '../img/calendar_hover.png';
+import activeCheck from '../img/history_hover.png';
 import activeStudy from '../img/click_study_button.png';
 import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
 import { removeCookie } from '../util/cookie';
-//내가 없애서 미안해
 import home from '../img/Home.svg';
 
 //태영 : Menubar 제작
@@ -42,7 +41,7 @@ const Menubar = () => {
           </li>
           <li>
             <NavLink
-              to="/checks"
+              to="/history"
               className={styles.checkLi}
               style={({ isActive }) => ({
                 backgroundImage: isActive ? `url(${activeCheck})` : '',
