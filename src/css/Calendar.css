@@ -5,3 +5,9 @@
     /* display: inline-block; */
   }
 
+  .fc-button {
+    border-color: #000 		!important;
+    background-color: #000 	!important;
+    color: #fff 				!important;
+    font-weight: bold 			!important;
+    }

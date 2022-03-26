@@ -21,6 +21,7 @@ export default function Calendarpg() {
         eventTextColor={'#FFF'}
         eventColor={'#F2921D'}
         height={'660px'}
+        Toolbar
       />
     </div>
   );
