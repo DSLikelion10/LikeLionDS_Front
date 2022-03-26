@@ -3,70 +3,69 @@ import React from 'react';
 import '../css/Home.css';
 import github from '../img/github.png';
 import discord from '../img/discord.png';
-import google_drive from '../img/google_drive.png';
+import googleDrive from '../img/google_drive.png';
 import velog from '../img/Velog.png';
 import insta from '../img/insta.png';
 
+function SNS({ contact }) {
+  return (
+    <span className="sns_aline">
+      <a
+        style={{ textDecoration: 'none' }}
+        target="_blank"
+        href={contact.link}
+        rel="noreferrer"
+      >
+        <img className="sns_icon" alt={contact.title} src={contact.img} />
+        <p className="sns_name"> {contact.title} 바로가기 </p>
+      </a>
+    </span>
+  );
+}
+
 export default function Home() {
+  const contacts = [
+    {
+      id: 1,
+      title: 'github',
+      link: 'https://github.com/DSLikelion10',
+      img: github,
+    },
+    {
+      id: 2,
+      title: 'discord',
+      link: 'https://discord.com/channels/912254268814278656/925771903673712690/953153862297075772',
+      img: discord,
+    },
+    {
+      id: 3,
+      title: 'google-drive',
+      link: 'https://drive.google.com/drive/u/2/folders/12ls2TFz53N3HJYDfiRbS-0kPRzsA5uUs',
+      img: googleDrive,
+    },
+    {
+      id: 4,
+      title: 'velog',
+      link: 'https://velog.io/@liklion_ds',
+      img: velog,
+    },
+    {
+      id: 5,
+      title: 'insta',
+      link: 'https://www.instagram.com/likelion_ds/',
+      img: insta,
+    },
+  ];
+
   return (
     <div className="wideframe">
       <h1 className="title">안녕하세요! 덕성여대 멋쟁이사자처럼 10기 입니다</h1>
       <h1 className="small-title"> 덕성 멋사 10기 입니다 </h1>
-      {/* 하드코딩*/}
       <div className="sns_container">
         <div className="sns_box">
-          <span className="sns_aline">
-            <a
-              style={{ textDecoration: 'none' }}
-              target="_blank"
-              href="https://github.com/DSLikelion10"
-              rel="noreferrer"
-            >
-              <img className="sns_icon" alt="sns_icon" src={github} />
-              <p className="sns_name"> Github 바로가기 </p>
-            </a>
-          </span>
-          <span className="sns_aline">
-            <a
-              target="_blank"
-              href="https://www.codelion.net/"
-              rel="noreferrer"
-            >
-              <img className="sns_icon" alt="sns_icon" src={discord} />
-              <p className="sns_name"> discord 바로가기 </p>
-            </a>
-          </span>
-          <span className="sns_aline">
-            <a
-              target="_blank"
-              href="https://www.codelion.net/"
-              rel="noreferrer"
-            >
-              <img className="sns_icon" alt="sns_icon" src={google_drive} />
-              <p className="sns_name"> google_drive 바로가기 </p>
-            </a>
-          </span>
-
-          <span className="sns_aline">
-            <a
-              target="_blank"
-              href="https://velog.io/@liklion_ds"
-              rel="noreferrer"
-            >
-              <img className="sns_icon" alt="sns_icon" src={velog} />
-              <p className="sns_name"> velog 바로가기 </p>
-            </a>
-          </span>
-          <span className="sns_aline">
-            <a
-              target="_blank"
-              href="https://www.instagram.com/likelion_ds/"
-              rel="noreferrer"
-            >
-              <img className="sns_icon" alt="sns_icon" src={insta} />
-              <p className="sns_name"> insta 바로가기 </p>
-            </a>
-          </span>
+          {contacts.map((contact, index) => (
+            <SNS contact={contact} key={index} />
+          ))}
         </div>
       </div>
     </div>
