@@ -6,6 +6,8 @@ import '../css/ResetCSS.css';
 import styles from '../css/Menubar.module.css';
 import { Link, Outlet, NavLink } from 'react-router-dom';
 import { removeCookie } from '../util/cookie';
+//내가 없애서 미안해
+import home from '../img/Home.svg';
 
 //태영 : Menubar 제작
 const Menubar = () => {
