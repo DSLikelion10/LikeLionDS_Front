@@ -27,31 +27,31 @@ export default function Home() {
   const contacts = [
     {
       id: 1,
-      title: 'github',
+      title: 'Github',
       link: 'https://github.com/DSLikelion10',
       img: github,
     },
     {
       id: 2,
-      title: 'discord',
+      title: 'Discord',
       link: 'https://discord.com/channels/912254268814278656/925771903673712690/953153862297075772',
       img: discord,
     },
     {
       id: 3,
-      title: 'googleDrive',
+      title: 'GoogleDrive',
       link: 'https://drive.google.com/drive/u/2/folders/12ls2TFz53N3HJYDfiRbS-0kPRzsA5uUs',
       img: googleDrive,
     },
     {
       id: 4,
-      title: 'velog',
+      title: 'Velog',
       link: 'https://velog.io/@liklion_ds',
       img: velog,
     },
     {
       id: 5,
-      title: 'insta',
+      title: 'Insta',
       link: 'https://www.instagram.com/likelion_ds/',
       img: insta,
     },
