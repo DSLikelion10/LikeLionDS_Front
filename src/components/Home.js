@@ -39,7 +39,7 @@ export default function Home() {
     },
     {
       id: 3,
-      title: 'google-drive',
+      title: 'googleDrive',
       link: 'https://drive.google.com/drive/u/2/folders/12ls2TFz53N3HJYDfiRbS-0kPRzsA5uUs',
       img: googleDrive,
     },

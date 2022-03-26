@@ -8,15 +8,22 @@ import Mypage from './components/Mypage';
 import StudyMain from './components/Study_main';
 import Login from './components/Login';
 import Signup from './components/Signup';
+<<<<<<< HEAD
 import ProjectList from './components/ProjectList';
 import ProjectCreate from './components/ProjectCreate';
 import ProjectView from './components/ProjectView';
+=======
+>>>>>>> 2096e0beb706b3dfcf0daf049431da4df1cc2f90
 import Study from './components/Study';
 import StudyNewForm from './components/StudyNewForm';
 import StudyList from './components/StudyList';
 import { getCookie } from './util/cookie';
 import { Routes, Route } from 'react-router-dom';
 import Calendar from './components/Calendarpg';
+//은 히스토리 페이지 추가
+import HistoryMenubar from './components/history_menubar';
+import History from './components/history';
+import HistoryStaff from './components/history_staff';
 
 const App = () => {
   //로그인 상태 판별
@@ -43,10 +50,18 @@ const App = () => {
               <Route path=":studyId" element={<Study />} />
               <Route path="new" element={<StudyNewForm />} />
             </Route>
+<<<<<<< HEAD
             {/* 은 과제제출 페이지, 제출완료 페이지, 운영진과제창 라우터 설정 */}
             <Route path="/projectlist" element={<ProjectList />}></Route>
             <Route path="/projectcreate" element={<ProjectCreate />}></Route>
             <Route path="/projectview" element={<ProjectView />}></Route>
+=======
+            {/* 은 히스토리 페이지 라우터 설정 */}
+            <Route path="/history" element={<HistoryMenubar />}>
+              <Route index element={<History />} />
+              <Route path="staff" element={<HistoryStaff />}></Route>
+            </Route>
+>>>>>>> 2096e0beb706b3dfcf0daf049431da4df1cc2f90
           </Route>
         )}
         <Route path="/login" element={<Login />}></Route>
