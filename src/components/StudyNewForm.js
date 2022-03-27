@@ -49,14 +49,19 @@ const StudyNewForm = () => {
 
     if (name === 'title') {
       setTitle(value);
+      console.log(value);
     } else if (name === 'username') {
       setUsername(value);
+      console.log(value);
     } else if (name === 'studyDate') {
       setStudyDate(value);
+      console.log(value);
     } else if (name === 'studyText') {
       setStudyText(value);
+      console.log(value);
     } else if (name === 'img') {
       console.log(e.target.files[0]);
+      console.log(value);
       setImg(e.target.files[0]);
     }
   }, []);
@@ -120,6 +125,7 @@ const StudyNewForm = () => {
           accept="image/*"
           style={{ margin: '10px 0 15px 0' }}
           name="img"
+          value={img}
           onChange={handleChange}
         ></input>
         <br />
