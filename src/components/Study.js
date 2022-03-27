@@ -20,16 +20,16 @@ const Study = () => {
       .catch((error) => console.log('Network Error : ', error));
   }, [params.studyId]);
 
-  const handleDelete = () => {
-    const id = params.studyId;
-    axios
-      .get(`http://localhost:3001/study/${id}`)
-      .then((res) => {
-        navigate('/study_main');
-        console.log('delete 성공을 축하드립니다 -이곳은 멋사 본부-');
-      })
-      .catch((error) => console.log('Network Error : ', error));
-  };
+  // const handleDelete = () => {
+  //   const id = params.studyId;
+  //   axios
+  //     .get(`http://localhost:3001/study/${id}`)
+  //     .then((res) => {
+  //       navigate('/study_main');
+  //       console.log('delete 성공을 축하드립니다 -이곳은 멋사 본부-');
+  //     })
+  //     .catch((error) => console.log('Network Error : ', error));
+  // };
 
   return (
     <div>
@@ -50,11 +50,7 @@ const Study = () => {
         </div>
       </div>
       <div class={studystyle.studybutton}>
-        <button
-          type="button"
-          class={studystyle.deleteBT}
-          onClick={handleDelete}
-        >
+        <button type="button" class={studystyle.deleteBT}>
           삭제하기
         </button>
         <button type="button" class={studystyle.modifyBT}>

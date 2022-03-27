@@ -8,38 +8,28 @@ const StudyNewForm = () => {
   const [username, setUsername] = useState('');
   const [studyText, setStudyText] = useState('');
   const [studyDate, setStudyDate] = useState('');
-  const [img, setImg] = useState(null);
+  const [img, setImg] = useState('');
 
   const navigate = useNavigate();
+  const formData = new FormData();
 
   const handleSubmit = (e) => {
     console.log('눌린거 맞지?');
     e.preventDefault();
-    const formData = new FormData();
+
+    formData.append('title', title);
+    formData.append('studyText', studyText);
+    formData.append('username', username);
+    formData.append('studyDate', studyDate);
     formData.append('img', img);
+
     axios
-      .post('http://localhost:3001/study', {
-        title: title,
-        username: username,
-        studyText: studyText,
-        studyDate: studyDate,
-      })
+      .post('http://localhost:3001/study', formData)
       .then((res) => {
         navigate('/study_main');
         console.log('post 성공을 축하드립니다 -이곳은 멋사 본부-');
       })
       .catch((error) => console.log('Network Error : ', error));
-
-    axios({
-      method: 'post',
-      url: 'http://localhost:3001/study',
-      data: formData,
-      headers: { 'Content-Type': 'multipart/form-data' },
-    })
-      .then((res) => {
-        console.log('이거 안되냐?');
-      })
-      .catch((error) => console.log(error));
   };
 
   const handleChange = useCallback((e) => {
@@ -49,19 +39,14 @@ const StudyNewForm = () => {
 
     if (name === 'title') {
       setTitle(value);
-      console.log(value);
     } else if (name === 'username') {
       setUsername(value);
-      console.log(value);
     } else if (name === 'studyDate') {
       setStudyDate(value);
-      console.log(value);
     } else if (name === 'studyText') {
       setStudyText(value);
-      console.log(value);
     } else if (name === 'img') {
       console.log(e.target.files[0]);
-      console.log(value);
       setImg(e.target.files[0]);
     }
   }, []);
@@ -70,7 +55,11 @@ const StudyNewForm = () => {
     <div>
       <h1 class={studystyle.detailtitle}>새 글 작성하기</h1>
       <hr />
-      <form onSubmit={handleSubmit} class={studystyle.studynewform}>
+      <form
+        onSubmit={handleSubmit}
+        class={studystyle.studynewform}
+        encType="multipart/form-data"
+      >
         <label>제목</label>
         <br />
         <input
@@ -125,7 +114,6 @@ const StudyNewForm = () => {
           accept="image/*"
           style={{ margin: '10px 0 15px 0' }}
           name="img"
-          value={img}
           onChange={handleChange}
         ></input>
         <br />
