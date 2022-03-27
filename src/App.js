@@ -17,6 +17,9 @@ import Calendar from './components/Calendarpg';
 //은 히스토리 페이지 추가
 import HistoryMenubar from './components/history_menubar';
 import History from './components/history';
+import Likelion10th from './components/likelion10th';
+import Likelion9th from './components/likelion9th';
+import Likelion8th from './components/likelion8th';
 import HistoryStaff from './components/history_staff';
 
 const App = () => {
@@ -48,6 +51,9 @@ const App = () => {
             <Route path="/history" element={<HistoryMenubar />}>
               <Route index element={<History />} />
               <Route path="staff" element={<HistoryStaff />}></Route>
+              <Route path="9th" element={<Likelion9th />}></Route>
+              <Route path="8th" element={<Likelion8th />}></Route>
+              <Route path="10th" element={<Likelion10th />}></Route>
             </Route>
           </Route>
         )}

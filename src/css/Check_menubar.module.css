@@ -1,9 +1,9 @@
 .header_list {
   height: 50px;
-  background: #474F56;
+  background: #474f56;
   border-radius: 20px 20px 0px 0px;
   margin: 0px;
-  padding:0px;
+  padding: 0px;
   font-family: paybooc-Bold;
   /* 체크 헤더 CSS */
 }
@@ -13,14 +13,13 @@
   /* font-family: NotoSansKR; */
   font-size: 20px;
   font-weight: bold;
-  top:15px;
+  top: 15px;
   left: 16px;
   position: relative;
   display: inline;
   margin: 6px;
 }
 
-
 .header_item :hover {
-color:#f2921d;
+  color: #f2921d;
 }
