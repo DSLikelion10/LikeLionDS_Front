@@ -80,7 +80,7 @@ const Menubar = () => {
               </NavLink>
             </li>
             <li id="check_text">
-              <NavLink style={Active} className={styles.clicked} to="/checks">
+              <NavLink style={Active} className={styles.clicked} to="/history">
                 역사
               </NavLink>
             </li>
