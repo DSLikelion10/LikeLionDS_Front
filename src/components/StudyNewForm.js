@@ -1,17 +1,23 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import studystyle from '../css/Study.module.css';
 import { useNavigate } from 'react-router-dom';
+import { getCookie } from '../util/cookie';
 
 const StudyNewForm = () => {
   const [title, setTitle] = useState('');
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState(getCookie('userName'));
   const [studyText, setStudyText] = useState('');
   const [studyDate, setStudyDate] = useState('');
   const [img, setImg] = useState('');
 
   const navigate = useNavigate();
   const formData = new FormData();
+
+  // useEffect(() => {
+  //   console.log(getCookie('mytoken'));
+  //   console.log(getCookie('userName'));
+  // });
 
   const handleSubmit = (e) => {
     console.log('눌린거 맞지?');
@@ -40,13 +46,13 @@ const StudyNewForm = () => {
     if (name === 'title') {
       setTitle(value);
     } else if (name === 'username') {
-      setUsername(value);
+      setUsername(getCookie('userName'));
     } else if (name === 'studyDate') {
       setStudyDate(value);
     } else if (name === 'studyText') {
       setStudyText(value);
     } else if (name === 'img') {
-      console.log(e.target.files[0]);
+      // console.log(e.target.files[0]);
       setImg(e.target.files[0]);
     }
   }, []);
@@ -75,10 +81,11 @@ const StudyNewForm = () => {
         <label>작성자</label>
         <br />
         <input
+          readOnly
           class={studystyle.stip}
           type="text"
           name="username"
-          value={username}
+          value={getCookie('userName')}
           onChange={handleChange}
         ></input>
         <br />
