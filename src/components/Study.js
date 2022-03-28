@@ -15,6 +15,8 @@ const Study = () => {
   const navigate = useNavigate();
   const fileReader = new FileReader();
 
+  const [isVisible,setIsVisible] = useState(false);
+
   useEffect(() => {
     const id = params.studyId;
     axios
@@ -28,8 +30,13 @@ const Study = () => {
         setDetails(res.data);
         setImgurl(url);
         document.getElementById('image').src = url;
+        if(res.data.username === getCookie("userName")){
+          setIsVisible(true);
+        }else{setIsVisible(false);}
       })
       .catch((error) => console.log('Network Error : ', error));
+
+      
   }, []);
 
   const deleteBT = () => {
@@ -74,14 +81,17 @@ const Study = () => {
           <img id="image" alt="이미지" />
         </div>
       </div>
+      {isVisible && (
       <div class={studystyle.studybutton}>
-        <button type="button" class={studystyle.deleteBT} onClick={deleteBT}>
-          삭제하기
-        </button>
-        <button type="button" class={studystyle.modifyBT}>
-          수정하기
-        </button>
-      </div>
+      <button type="button" class={studystyle.deleteBT} onClick={deleteBT}>
+        삭제하기
+      </button>
+      <button type="button" class={studystyle.modifyBT}>
+        수정하기
+      </button>
+    </div>
+      )}
+
     </div>
   );
 };
