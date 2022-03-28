@@ -81,6 +81,7 @@
 .eight {
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .eight::-webkit-scrollbar {

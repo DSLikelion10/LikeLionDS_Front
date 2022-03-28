@@ -75,7 +75,8 @@ body {
 }
 
 .wht {
-  width: 100vh;
+  width: 150vh;
+  margin-left: 10%;
 }
 
 @media (max-height: 700px) {
@@ -94,6 +95,7 @@ body {
     margin: 3% 10% 2% 3%;
   }
   .wht {
-    width: 100vh;
+    width: 110vh;
+    margin-left: 20%;
   }
 }

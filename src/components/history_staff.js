@@ -1,4 +1,5 @@
 import React from 'react';
+import CardItem from './Carditem';
 import '../css/History_staff.css';
 
 class Staff extends React.Component{
@@ -10,25 +11,46 @@ class Staff extends React.Component{
     }
   return () {
     return (
-        <div className='container'>
-            <div className='App'>
-            <h1>메모장</h1><br/><br/>
-                <table>
-                    <tbody>
-                    <tr className='trList'>
-                            {this.state.memos.map( (memo,index)=>
-                            <td className='cell' key={index} onClick={()=>this.reopenModal(index)}>
-                                <div className='inner'>
-                                    <h2>{memo.title}</h2>
-                                    <h5>{memo.author}</h5><br/><br/>
-                                    <h4>{memo.content}</h4><br/>
-                                </div>
-                            </td>
-                            )}
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div className='cards'>
+            <h1>Check out these EPIC Destinations!</h1>
+            <div className="cards__container">
+                <div className="cards__wrapper">
+                    <ul className="cards__items">
+                        <CardItem 
+                         src = ""
+                         text = "1"
+                         label = ''
+                         path=''
+                        />    
+                        <CardItem 
+                         src = ""
+                         text = "2"
+                         label = ''
+                         path=''
+                        />    
+                    </ul>    
+                    <ul className='cards__items'>
+                        <CardItem
+                        src=''
+                        text='3'
+                        label=''
+                        path=''
+                        />
+                        <CardItem
+                        src=''
+                        text='4'
+                        label=''
+                        path=''
+                        />
+                        <CardItem
+                        src=''
+                        text='5'
+                        label=''
+                        path=''
+                        />   
+                    </ul>    
+                </div>
+            </div>            
         </div>
     );
      }

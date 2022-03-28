@@ -42,7 +42,7 @@ function Check_menubar() {
                     ? { color: '#f2921d', textDecoration: 'none' }
                     : { color: '#ffffff', textDecoration: 'none' }
                 }
-                to="/history/10th"
+                to="/history/9th"
                 >
                 연혁
                 </NavLink>

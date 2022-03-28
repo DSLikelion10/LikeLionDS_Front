@@ -52,8 +52,8 @@ const App = () => {
               <Route index element={<History />} />
               <Route path="staff" element={<HistoryStaff />}></Route>
               <Route path="9th" element={<Likelion9th />}></Route>
-              <Route path="8th" element={<Likelion8th />}></Route>
-              <Route path="10th" element={<Likelion10th />}></Route>
+              {/* <Route path="8th" element={<Likelion8th />}></Route>
+              <Route path="10th" element={<Likelion10th />}></Route> */}
             </Route>
           </Route>
         )}

@@ -17,7 +17,7 @@
   }
 }
 
-.unmount {
+.unmount1 {
   animation: 0.5s ease-in-out unloadEffect;
 }
 
@@ -31,6 +31,74 @@
     opacity: 0;
   }
 }
+
+.mount2 {
+    animation: 0.6s ease-in-out loadEffect2;
+  }
+  
+  @keyframes loadEffect2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .unmount2 {
+    animation: 0.5s ease-in-out unloadEffect;
+  }
+  
+  @keyframes unloadEffect {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+  }
+
+  .mount3 {
+    animation: 0.6s ease-in-out loadEffect2;
+  }
+  
+  @keyframes loadEffect2 {
+    0% {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    50% {
+      opacity: 0.5;
+      transform: translateX(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+  
+  .unmount3 {
+    animation: 0.5s ease-in-out unloadEffect;
+  }
+  
+  @keyframes unloadEffect {
+    0% {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-30px);
+      opacity: 0;
+    }
+  }
 
 .nine > .title {
   font-size: 50px;
