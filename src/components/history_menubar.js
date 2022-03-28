@@ -50,10 +50,9 @@ function Check_menubar() {
         </ul>
     <Outlet />
   </>
-
-
+     
   );
-};
+}
 
 export default Check_menubar;
 

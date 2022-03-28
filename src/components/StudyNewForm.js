@@ -1,25 +1,36 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
 import studystyle from '../css/Study.module.css';
 import { useNavigate } from 'react-router-dom';
+import { getCookie } from '../util/cookie';
 
 const StudyNewForm = () => {
   const [title, setTitle] = useState('');
-  const [username, setUsername] = useState('');
+  const [username, setUsername] = useState(getCookie('userName'));
   const [studyText, setStudyText] = useState('');
   const [studyDate, setStudyDate] = useState('');
+  const [img, setImg] = useState('');
 
   const navigate = useNavigate();
+  const formData = new FormData();
+
+  // useEffect(() => {
+  //   console.log(getCookie('mytoken'));
+  //   console.log(getCookie('userName'));
+  // });
 
   const handleSubmit = (e) => {
+    console.log('눌린거 맞지?');
     e.preventDefault();
+
+    formData.append('title', title);
+    formData.append('studyText', studyText);
+    formData.append('username', username);
+    formData.append('studyDate', studyDate);
+    formData.append('img', img);
+
     axios
-      .post('http://localhost:3001/study', {
-        title: title,
-        username: username,
-        studyText: studyText,
-        studyDate: studyDate,
-      })
+      .post('http://localhost:3001/study', formData)
       .then((res) => {
         navigate('/study_main');
         console.log('post 성공을 축하드립니다 -이곳은 멋사 본부-');
@@ -35,11 +46,14 @@ const StudyNewForm = () => {
     if (name === 'title') {
       setTitle(value);
     } else if (name === 'username') {
-      setUsername(value);
+      setUsername(getCookie('userName'));
     } else if (name === 'studyDate') {
       setStudyDate(value);
     } else if (name === 'studyText') {
       setStudyText(value);
+    } else if (name === 'img') {
+      // console.log(e.target.files[0]);
+      setImg(e.target.files[0]);
     }
   }, []);
 
@@ -47,7 +61,11 @@ const StudyNewForm = () => {
     <div>
       <h1 class={studystyle.detailtitle}>새 글 작성하기</h1>
       <hr />
-      <form onSubmit={handleSubmit} class={studystyle.studynewform}>
+      <form
+        onSubmit={handleSubmit}
+        class={studystyle.studynewform}
+        encType="multipart/form-data"
+      >
         <label>제목</label>
         <br />
         <input
@@ -63,10 +81,11 @@ const StudyNewForm = () => {
         <label>작성자</label>
         <br />
         <input
+          readOnly
           class={studystyle.stip}
           type="text"
           name="username"
-          value={username}
+          value={getCookie('userName')}
           onChange={handleChange}
         ></input>
         <br />
@@ -101,6 +120,8 @@ const StudyNewForm = () => {
           type="file"
           accept="image/*"
           style={{ margin: '10px 0 15px 0' }}
+          name="img"
+          onChange={handleChange}
         ></input>
         <br />
         <div class={studystyle.savebutton}>

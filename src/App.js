@@ -36,10 +36,10 @@ const App = () => {
           <Route path="/" element={<Menubar />}>
             <Route index element={<Home />} />
             {/* 태영 : 과제체크 페이지와 출석 체크 페이지 묶음 */}
-            <Route path="/checks" element={<CheckMenubar />}>
+            {/* <Route path="/checks" element={<CheckMenubar />}>
               <Route index element={<CheckTask />} />
               <Route path="attend" element={<CheckAttend />}></Route>
-            </Route>
+            </Route> */}
             {/* 은빈 마이페이지 캘린더로 라우터 변경 */}
             <Route path="/calendar" element={<Calendar />}></Route>
             <Route path="/study_main" element={<StudyMain />}>

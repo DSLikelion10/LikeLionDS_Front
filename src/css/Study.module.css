@@ -115,6 +115,15 @@
   padding: 0px 10px 0 10px;
 }
 
+.stip:read-only {
+  background-color: #c4c4c4;
+  color: gray;
+}
+
+.stip:focus {
+  outline: none;
+}
+
 .studynewform textarea {
   margin: 10px 0 10px 0;
 }
@@ -129,4 +138,28 @@
   width: 100px;
   height: 30px;
   font-size: 15px;
+  cursor: pointer;
+}
+
+.deleteBT {
+  color: white;
+  background: #686c73;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+.modifyBT {
+  color: white;
+  background: #686c73;
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.studybutton {
+  text-align: right;
 }
