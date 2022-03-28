@@ -17,6 +17,8 @@ const Study = () => {
 
   const navigate = useNavigate();
 
+  const [isVisible, setIsVisible] = useState(false);
+
   useEffect(() => {
     const id = params.studyId;
     axios
@@ -33,8 +35,6 @@ const Study = () => {
         setImgurl('http://localhost:3001/' + img_url.join(''));
         console.log(String.fromCharCode(res.data.img.data[0]));
         setDetails(res.data);
-
-        //이미지를 불러와보자.
       })
       .catch((error) => console.log('Network Error : ', error));
   }, []);
@@ -82,11 +82,13 @@ const Study = () => {
           {console.log(imgurl)}
         </div>
       </div>
-      <div class={studystyle.studybutton}>
-        <button type="button" class={studystyle.deleteBT} onClick={deleteBT}>
-          삭제하기
-        </button>
-      </div>
+      {isVisible && (
+        <div class={studystyle.studybutton}>
+          <button type="button" class={studystyle.deleteBT} onClick={deleteBT}>
+            삭제하기
+          </button>
+        </div>
+      )}
     </div>
   );
 };
