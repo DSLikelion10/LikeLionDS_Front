@@ -28,7 +28,8 @@ const StudyNewForm = () => {
     formData.append('username', username);
     formData.append('studyDate', studyDate);
     formData.append('img', img);
-    
+
+    console.log(img);
     axios
       .post('http://localhost:3001/study', formData)
       .then((res) => {
