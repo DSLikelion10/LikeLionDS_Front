@@ -45,28 +45,25 @@ body {
   margin: 3% 10% 10% 1%;
 }
 
-.bg-blue {
+.bg-yellow {
   background: linear-gradient(rgb(255, 255, 255), rgb(146, 146, 146));
 }
 
-/* .bg-black {
-  background: linear-gradient(rgb(146, 146, 146), rgb(44, 44, 44));
-} */
-
 .bg-pink {
-  color: aliceblue;
   background: linear-gradient(rgb(146, 146, 146), rgb(0, 0, 0));
 }
 
 .hack {
   font-size: 100px;
   text-align: center;
+  color: #fff;
 }
 
 .with {
   font-size: 50px;
   text-align: center;
   margin-top: 40px;
+  color: #fff;
 }
 
 .logo {
@@ -76,7 +73,11 @@ body {
 
 .wht {
   width: 150vh;
-  margin-left: 10%;
+  display: inline;
+}
+
+.text1 {
+  display: inline;
 }
 
 @media (max-height: 700px) {
@@ -96,6 +97,5 @@ body {
   }
   .wht {
     width: 110vh;
-    margin-left: 20%;
   }
 }

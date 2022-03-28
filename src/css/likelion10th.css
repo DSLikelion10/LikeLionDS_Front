@@ -110,7 +110,6 @@
 @media (max-height: 700px) {
   .ten > .title {
     font-size: 50px;
-    position: relative;
   }
 
   .ten > ul {

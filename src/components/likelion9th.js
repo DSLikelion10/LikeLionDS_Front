@@ -23,19 +23,12 @@ export default function History() {
                 setMount1(v=> !v);    
             }, 400) 
         }
-        // if(mount2){
-        //     setEffect1('mount1');
-        //     setMount2(v=> !v);
-        //     setMount1(v=> !v);
-        // }
-        // if(mount3){
-        //     setEffect1('mount1');
-        //     setMount3(v=> !v);
-        //     setMount1(v=> !v);
-        // }
         else{
+            setMount3(false);
+            setMount2(false);
             setEffect1('mount1');
             setMount1(v=> !v);
+            
         }
         
     };
@@ -48,20 +41,9 @@ export default function History() {
                 setMount2(v=> !v);    
             }, 400) 
         }
-        // if(mount1){
-        //     if(mount2 === false){
-        //     setEffect1('mount1');
-        //     setMount1(v=> !v);
-        //     setMount2(v=> !v);
-        //     }
-        //     else
-        // }
-        // if(mount3){
-        //     setEffect1('mount1');
-        //     setMount3(v=> !v);
-        //     setMount2(v=> !v);
-        // }
         else{
+            setMount1(false);
+            setMount3(false);
             setEffect2('mount2');
             setMount2(v=> !v);
         }
@@ -76,17 +58,9 @@ export default function History() {
                 setMount3(v=> !v);    
             }, 400) 
         }
-        // if(mount2){
-        //     setEffect1('mount1');
-        //     setMount2(v=> !v);
-        //     setMount3(v=> !v);
-        // }
-        // if(mount1){
-        //     setEffect1('mount1');
-        //     setMount1(v=> !v);
-        //     setMount3(v=> !v);
-        // }
         else{
+            setMount1(false);
+            setMount2(false);
             setEffect3('mount3');
             setMount3(v=> !v);
         }
@@ -105,7 +79,7 @@ export default function History() {
                 {mount1 ? 
                 <div className={`box-wrap ${effect1}`}>
                     <div className="ten">
-                        <text className="title">10기 활동(예정)</text>
+                    <text className="title">10기 활동(예정)</text>
                         <ul>
                             <li>
                             <h4>2022. 03 덕성여자대학교 멋쟁이사자처럼 10기 </h4>
