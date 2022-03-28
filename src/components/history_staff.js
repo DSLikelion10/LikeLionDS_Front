@@ -1,18 +1,18 @@
 import React from 'react';
-import CardItem from './Carditem';
+// import CardItem from './Carditem';
 import '../css/History_staff.css';
 
 class Staff extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            profile: []
-        }
-    }
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+    //         profile: []
+    //     }
+    // }
   return () {
     return (
         <div className='cards'>
-            <h1>Check out these EPIC Destinations!</h1>
+            {/* <h1>Check out these EPIC Destinations!</h1>
             <div className="cards__container">
                 <div className="cards__wrapper">
                     <ul className="cards__items">
@@ -50,7 +50,7 @@ class Staff extends React.Component{
                         />   
                     </ul>    
                 </div>
-            </div>            
+            </div>             */}
         </div>
     );
      }
