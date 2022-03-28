@@ -115,6 +115,15 @@
   padding: 0px 10px 0 10px;
 }
 
+.stip:read-only {
+  background-color: #c4c4c4;
+  color: gray;
+}
+
+.stip:focus {
+  outline: none;
+}
+
 .studynewform textarea {
   margin: 10px 0 10px 0;
 }
