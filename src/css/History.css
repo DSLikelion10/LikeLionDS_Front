@@ -6,6 +6,7 @@ body {
 .outer {
   height: 100vh;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 /* 화면에서 스크롤바 안보이게 */
@@ -13,7 +14,7 @@ body {
   display: none;
 } */
 .outer::-webkit-scrollbar {
-  width: 20px;
+  width: 10px;
 }
 
 .outer::-webkit-scrollbar-track {
@@ -34,30 +35,27 @@ body {
   align-items: center;
 }
 
-.bg-yellow {
-  background: linear-gradient(white, rgb(230, 230, 230), rgb(200, 200, 200));
+.bg-yellow > h1 {
+  font-size: 60px;
+  margin: 3% 10% 2% 1%;
 }
 
-.bg-yellow > h1 {
-  font-size: 80px;
-  margin: 3% 10% 10% 3%;
+.bg-blue > h1 {
+  font-size: 60px;
+  margin: 3% 10% 10% 1%;
 }
 
 .bg-blue {
-  background: linear-gradient(rgb(200, 200, 200), rgb(146, 146, 146));
+  background: linear-gradient(rgb(255, 255, 255), rgb(146, 146, 146));
 }
 
-.bg-black {
+/* .bg-black {
   background: linear-gradient(rgb(146, 146, 146), rgb(44, 44, 44));
-}
+} */
 
 .bg-pink {
   color: aliceblue;
-  background: linear-gradient(rgb(44, 44, 44), rgb(24, 24, 24), rgb(0, 0, 0));
-}
-
-.logo {
-  width: 50vh;
+  background: linear-gradient(rgb(146, 146, 146), rgb(0, 0, 0));
 }
 
 .hack {
@@ -68,4 +66,36 @@ body {
 .with {
   font-size: 50px;
   text-align: center;
+  margin-top: 40px;
+}
+
+.logo {
+  width: 50vh;
+  margin-left: 39%;
+}
+
+.wht {
+  width: 150vh;
+  margin-left: 10%;
+}
+
+@media (max-height: 700px) {
+  .logo {
+    width: 50vh;
+    margin-left: 38%;
+  }
+
+  .bg-yellow > h1 {
+    font-size: 50px;
+    margin: 2% 10% 2% 1%;
+  }
+
+  .bg-blue > h1 {
+    font-size: 50px;
+    margin: 3% 10% 2% 3%;
+  }
+  .wht {
+    width: 110vh;
+    margin-left: 20%;
+  }
 }

@@ -1,0 +1,121 @@
+.ten > .title {
+  font-size: 50px;
+  position: relative;
+  margin-left: 10%;
+}
+
+.ten > ul {
+  margin: 12% 10% 10% 15%;
+  position: relative;
+  width: 960px;
+}
+
+.ten > ul:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  padding: 20px 0;
+  width: 3px;
+  height: 100%;
+  background-color: #eee;
+}
+.ten > ul li {
+  position: relative;
+  margin-bottom: 20px;
+  width: 50%;
+}
+.ten > ul li:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: -4px;
+  left: 85.3333%;
+  width: 75px;
+  height: 38px;
+  background-image: url(https://surc.or.kr/assets/icon-history-72e35a81b533771b1d598ddb83c79a8a761f88f76248478975f944c06bffefb8.png);
+  background-size: 78px 38px;
+}
+.ten > ul li:nth-child(odd) {
+  padding-left: 59.5%;
+}
+.ten > ul li:nth-child(odd):before {
+  transform: rotate(180deg);
+  left: 45.3333%;
+  right: auto;
+}
+.ten > ul li h4 {
+  padding-top: 6px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #3f454b;
+  font-weight: bold;
+}
+.ten > ul li p {
+  font-size: 15px;
+  line-height: 1.7;
+  letter-spacing: 0.01rem;
+  color: #707984;
+  word-break: keep-all;
+}
+
+.ten > ul li span {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  width: 320px;
+  height: 180px;
+  background-image: url('../img/9idea.png');
+}
+.ten > ul li .photo2 {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  width: 320px;
+  height: 180px;
+  background-image: url('../img/invisible.png');
+}
+
+.ten > ul li span:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -35px;
+  font-size: 14px;
+}
+
+.ten {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.ten::-webkit-scrollbar {
+  width: 10px;
+}
+
+.ten::-webkit-scrollbar-track {
+  background-color: #e4e4e4;
+  border-radius: 100px;
+}
+
+.ten::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-image: linear-gradient(180deg, #d0368a 0%, #708ad4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+}
+
+@media (max-height: 700px) {
+  .ten > .title {
+    font-size: 50px;
+    position: relative;
+  }
+
+  .ten > ul {
+    margin: 12% 10% 10% 5%;
+    position: relative;
+    width: 960px;
+  }
+}
