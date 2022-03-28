@@ -16,6 +16,7 @@ const Menubar = () => {
 
   const LogoutHandle = () => {
     removeCookie('mytoken');
+    removeCookie('userName');
     alert('로그아웃 되었습니다.');
   };
 
